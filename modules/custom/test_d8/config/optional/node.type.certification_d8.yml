@@ -1,0 +1,17 @@
+uuid: 4be8d655-be5b-45fe-aad8-735fe84624bd
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Certification
+type: certification_d8
+description: 'Utilisez la certification pour indiquer qu''un utilisateur a obtenu un des certificats'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

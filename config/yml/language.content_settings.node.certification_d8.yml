@@ -1,0 +1,13 @@
+uuid: 9bc74648-52dd-498d-bae5-3110769fce13
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.certification_d8
+_core:
+  default_config_hash: aQ7bVDqXam42pwXoZE-Mrl81-jGVzv8u2DHDDSM8BPc
+id: node.certification_d8
+target_entity_type_id: node
+target_bundle: certification_d8
+default_langcode: site_default
+language_alterable: false

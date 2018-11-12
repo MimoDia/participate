@@ -1,0 +1,9 @@
+name: Actualité Drupal 8
+description: 'Ce module contient toutes les configurations nécessaire au bon fonctionnement de la partie Actualité Drupal 8'
+package: Custom
+type: module
+version: VERSION
+core: '8.x'
+
+
+

@@ -1,0 +1,14 @@
+uuid: bdbcd9ae-e2f7-4ba7-a10c-24210e5a87e1
+langcode: fr
+status: true
+dependencies: {  }
+name: profile_picture_drupalien
+label: 'profile picture drupalien'
+effects:
+  8791f746-471f-491d-8afa-728a8955c25e:
+    uuid: 8791f746-471f-491d-8afa-728a8955c25e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100

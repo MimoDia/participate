@@ -1,0 +1,14 @@
+uuid: a7de2291-b2c6-43a6-91b8-a4316f1edc60
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.drupalien
+  module:
+    - user
+id: user_remove_role_action.drupalien
+label: 'Enlever le rôle drupalien des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: drupalien

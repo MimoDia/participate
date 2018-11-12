@@ -1,0 +1,10 @@
+uuid: 87bf36bc-5ebc-4a63-8430-cb36eccc2247
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LSzslFi1bmg0WuEJhs8Kg0hyt1ESPcbbAe5MGBjVXTY
+id: date_experience_professionnelle
+label: 'Date expérience professionnelle'
+locked: false
+pattern: m/Y

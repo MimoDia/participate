@@ -1,0 +1,147 @@
+@import "default-variables";
+
+/***********************Traitement WEBMASTER**********************************/
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8 
+.view-content 
+.webmaster
+.views-field-view-user 
+.field-content a,
+
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8 
+.view-content 
+.webmaster
+.views-field-view-user 
+.field-content a{
+    background: $webmaster;
+    color: $cgd8-blue;
+    display: block;
+    padding: $padding_text_theme; 
+    margin-bottom: 10px;
+
+    &:hover{
+    	color:white;
+    	text-shadow: $shadow_text_theme;
+    	text-decoration-line: none;
+    	font-weight: bold;
+    } 
+    hr {
+	border-top: 1px solid #8c8b8b;
+}
+}
+/********************************FIN**************************************/
+
+
+/****************************Traitement THEMER****************************/
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8 
+.view-content 
+.themer
+.views-field-view-user 
+.field-content a,
+
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8 
+.view-content 
+.themer
+.views-field-view-user 
+.field-content a{
+    background: $themer;
+    color: $cgd8-blue;
+    display: block;
+    padding: $padding_text_theme;
+    margin-bottom: 10px;
+
+    &:hover{
+    	color:white;
+    	text-shadow: $shadow_text_theme;
+    	text-decoration-line: none;
+    	font-weight: bold;
+
+    } 
+}
+/*********************************FIN************************************/
+
+
+/************************Traitement DEVELOPPEMENT************************/
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8 
+.view-content 
+.developpement
+.views-field-view-user 
+.field-content a,
+
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8 
+.view-content 
+.developpement
+.views-field-view-user 
+.field-content a{
+    background: $developpement;
+    color: $cgd8-blue;
+    display: block;
+    padding: $padding_text_theme;
+    margin-bottom: 10px;
+    
+    &:hover{
+    	color:white;
+    	text-shadow: $shadow_text_theme;
+    	text-decoration-line: none;
+    	font-weight: bold;
+    } 
+}
+
+/**********************************FIN****************************************/
+
+
+/******************************Traitement EXPERT******************************/
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8 
+.view-content 
+.expert
+.views-field-view-user 
+.field-content a,
+
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8 
+.view-content 
+.expert
+.views-field-view-user 
+.field-content a{
+    background: $expert;
+    color: $cgd8-blue;
+    display: block;
+    margin-bottom: 10px;
+    padding: $padding_text_theme;
+
+    &:hover{
+    	color:white;
+    	text-shadow: $shadow_text_theme;
+    	text-decoration-line: none;
+    	font-weight: bold;
+    } 
+}
+/***********************************FIN*****************************************/
+
+
+
+/*alignement divs*/
+ 
+
+.views-label-field-certif-theme,
+.views-label-field-certif-result,
+.views-label-field-certif-date-passage
+{
+	float: left;
+	margin-right: 0.5em;
+  	text-indent:0.5em;
+}
+
+.path-frontpage
+.footer {
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    border-top: 1px solid #E5E5E5;
+}

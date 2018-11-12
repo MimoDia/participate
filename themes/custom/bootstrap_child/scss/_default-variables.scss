@@ -1,0 +1,42 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+ /* COLORS */
+$bg-color-site: #39425b;
+
+$webmaster: rgba(237,231,45,1); //#ede72d;
+$themer: rgba(124,189,73,1); //#7cbd49;
+$developpement: rgba(43,164,237,1); //#2ba4ed;         
+$expert: rgba(242,73,66,1); //#f24942;
+
+$webmaster05: rgba(237,231,45,.5);
+$themer05: rgba(124,189,73,.5);
+$developpement05: rgba(43,164,237,.5);
+$expert05: rgba(242,73,66,.5);
+
+$cgd8-blue: rgb(57, 66, 91);//#39425b bg color + text
+$color-white: rgb(255, 255, 255); //#FFF
+$drupal-blue : rgb(6, 120, 190);//#0678be rubric title + text
+$light-blue : rgb(40, 168, 224);// #28a8e0 drop Drupal + text-hover
+
+$shadow_text_theme: 1px 1px 1px #000;
+$padding_text_theme: 5px;
+
+/* FONTS */
+$cgd8-font: "titillium_webregular", sans-serif;
+
+/* TITLE */
+$big-title-XL: 2.5em;//pre-home title
+$title-header: 3em;
+$title-footer: 1.563em;
+
+/* NAVIGATION */
+$font-size-nav-header: 1.875em; 
+
+

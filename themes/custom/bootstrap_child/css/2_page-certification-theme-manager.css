@@ -1,0 +1,206 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+/* COLORS */
+/* FONTS */
+/* TITLE */
+/* NAVIGATION */
+/***********************Traitement WEBMASTER**********************************/
+/* line 4, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.webmaster
+.views-field-view-user
+.field-content a,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.webmaster
+.views-field-view-user
+.field-content a {
+  background: #ede72d;
+  color: #39425b;
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+/* line 23, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.webmaster
+.views-field-view-user
+.field-content a:hover,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.webmaster
+.views-field-view-user
+.field-content a:hover {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+/* line 29, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.webmaster
+.views-field-view-user
+.field-content a hr,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.webmaster
+.views-field-view-user
+.field-content a hr {
+  border-top: 1px solid #8c8b8b;
+}
+
+/********************************FIN**************************************/
+/****************************Traitement THEMER****************************/
+/* line 37, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.themer
+.views-field-view-user
+.field-content a,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.themer
+.views-field-view-user
+.field-content a {
+  background: #7cbd49;
+  color: #39425b;
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+/* line 56, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.themer
+.views-field-view-user
+.field-content a:hover,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.themer
+.views-field-view-user
+.field-content a:hover {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+/*********************************FIN************************************/
+/************************Traitement DEVELOPPEMENT************************/
+/* line 68, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.developpement
+.views-field-view-user
+.field-content a,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.developpement
+.views-field-view-user
+.field-content a {
+  background: #2ba4ed;
+  color: #39425b;
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+/* line 87, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.developpement
+.views-field-view-user
+.field-content a:hover,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.developpement
+.views-field-view-user
+.field-content a:hover {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+/**********************************FIN****************************************/
+/******************************Traitement EXPERT******************************/
+/* line 99, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.expert
+.views-field-view-user
+.field-content a,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.expert
+.views-field-view-user
+.field-content a {
+  background: #f24942;
+  color: #39425b;
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+/* line 118, ../scss/2_page-certification-theme-manager.scss */
+#block-views-block-certif-d8-frontpage-role-manager-mes-consultants
+.view-certification-d8
+.view-content
+.expert
+.views-field-view-user
+.field-content a:hover,
+#block-views-block-certif-d8-frontpage-role-manager-tous-les-consult
+.view-certification-d8
+.view-content
+.expert
+.views-field-view-user
+.field-content a:hover {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+/***********************************FIN*****************************************/
+/*alignement divs*/
+/* line 132, ../scss/2_page-certification-theme-manager.scss */
+.views-label-field-certif-theme,
+.views-label-field-certif-result,
+.views-label-field-certif-date-passage {
+  float: left;
+  margin-right: 0.5em;
+  text-indent: 0.5em;
+}
+
+/* line 141, ../scss/2_page-certification-theme-manager.scss */
+.path-frontpage
+.footer {
+  margin-top: 5px;
+  padding-top: 20px;
+  padding-bottom: 6px;
+  border-top: 1px solid #E5E5E5;
+}

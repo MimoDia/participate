@@ -1,0 +1,21 @@
+uuid: fe43746c-1c50-4b56-a703-cef504890792
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: cHp0eT0evzn_O8ly8z2dhixUQYsumbr1zgLu9Nb6G7Q
+id: paragraph.field_skill_competences
+field_name: field_skill_competences
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: c9e837b4-4805-4e7c-ab29-bf3a25d15979
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: PzYsVbQ0XvayGCpcgMgqmbfIMZo52dFJkD7rw5uRAY0
+name: 'Test D8'
+type: test
+description: 'Ce type de contenu permet de créer un test sous forme de QCM'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

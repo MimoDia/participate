@@ -1,0 +1,37 @@
+uuid: ce020cc2-ec7f-4974-8d6c-ebdb26ed9de2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu
+    - node.type.evenement
+  module:
+    - address
+id: node.evenement.field_lieu
+field_name: field_lieu
+entity_type: node
+bundle: evenement
+label: Lieu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    FR: FR
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    givenName: givenName
+    additionalName: additionalName
+    familyName: familyName
+  langcode_override: ''
+  field_overrides: {  }
+field_type: address

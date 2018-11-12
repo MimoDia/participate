@@ -1,0 +1,12 @@
+name: Certification Drupal 8
+description: 'Ce module contient toutes les configurations nécessaire au bon fonctionnement de la partie Certification Drupal 8, ainsi que des fonctionnalités additionnelles'
+package: Custom
+dependencies:
+  - route_condition (>=8.x-1.0-alpha2)
+  - user_role_config
+type: module
+version: VERSION
+core: '8.x'
+
+
+

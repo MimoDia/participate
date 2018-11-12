@@ -1,0 +1,20 @@
+sudo rm -R core/;
+sudo rm -R modules/contrib/;
+sudo rm -R profiles/;
+sudo rm -R themes/bootstrap/;
+sudo rm -R sites/default/settings.php;
+sudo rm -R vendor/;
+sudo mv sites/default/files/translations/ sites/translations/;
+sudo rm -R sites/default/files/*;
+sudo mv sites/translations/ sites/default/files/translations/;
+composer update;
+sudo chmod 777 -R sites/default/;
+drush si config_installer --db-url="mysql://root:root@localhost:3306/codingame" --locale="fr" --account-name="admin@codingame.com" --account-pass="admin" --account-mail="admin@codingame.com" install_configure_form.update_status_module='' install_configure_form.site_default_country="FR" install_configure_form.date_default_timezone="Europe/Paris" --yes;
+drush cim -y;
+#compass clean themes/codingame/;
+#compass compile themes/codingame/;
+sudo rm -R .sass-cache/;
+drush cc css-js;
+#drush aci;
+#drush ali config/lang/default-fr.po fr
+drush cr;

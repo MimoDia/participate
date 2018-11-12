@@ -1,0 +1,76 @@
+ /*Default variables.*/
+@import "default-variables";
+
+ /*Base-theme overrides.*/
+@import 'overrides';
+
+//mixins
+@import 'mixins';
+
+//sprite
+@import 'icons';
+
+.section-classement {
+  .view-classement {
+    padding: 0 30px;
+  }
+}
+
+.section-classement table{
+  &.table{
+    caption{
+      border-top:1px solid #333;
+      text-align:center;
+      color:#333;
+    }
+    tr{
+      border:0;
+    }
+    &>tbody{
+      &>tr{
+        &>td{
+          border-top:0;
+          border-bottom:1px solid #333;
+          padding:0;
+          position:relative;
+        }
+      }
+    }
+    td{
+      div:nth-child(1){
+        float:left;
+        margin:10px;
+      }
+      div:nth-child(2){
+        margin:10px 0 0;
+        font-weight:bold;
+      }
+      div:nth-child(4){
+        font-size:1.25em;
+        font-weight:bold;
+        position:absolute;
+        bottom:10px;
+        right:10px;
+      }
+      img{
+        border-radius:50%;
+      }
+    }
+  }
+  &.webmaster{
+    caption{background:$webmaster;}
+    td{background:$webmaster05;}
+  }
+  &.themer{
+    caption{background:$themer;}
+    td{background:$themer05;}
+  }
+  &.developpement{
+    caption{background:$developpement;}
+    td{background:$developpement05;}
+  }
+  &.expert{
+    caption{background:$expert;}
+    td{background:$expert05;}
+  }
+}

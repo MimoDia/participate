@@ -1,0 +1,29 @@
+uuid: 7ae666a7-6c2d-4f89-823e-cfe43801c8b7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.certification_d8.field_certif_certificat
+    - field.field.node.certification_d8.field_certif_date_passage
+    - field.field.node.certification_d8.field_certif_result
+    - field.field.node.certification_d8.field_certif_theme
+    - node.type.certification_d8
+  module:
+    - user
+_core:
+  default_config_hash: EpAWQeBBj4s-TkecF_ISmhcj_5wEEjM38ACMhlO61IY
+id: node.certification_d8.teaser
+targetEntityType: node
+bundle: certification_d8
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_certif_certificat: true
+  field_certif_date_passage: true
+  field_certif_result: true
+  field_certif_theme: true
+  langcode: true

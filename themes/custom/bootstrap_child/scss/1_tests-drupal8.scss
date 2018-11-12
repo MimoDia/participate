@@ -1,0 +1,274 @@
+/* landing page des tests : /tests-drupal8 */
+ /*Default variables.*/
+@import "default-variables";
+
+ /*Base-theme overrides.*/
+@import 'overrides';
+
+//mixins
+@import 'mixins';
+
+//sprite
+@import 'icons';
+
+
+/* PAGE ACCUEIL DES 4 TESTS*/
+.section-tests {
+	padding-bottom: 0;
+}
+.section-tests .webmaster,
+.section-tests .themer,
+.section-tests .developpement,
+.section-tests .expert {
+	float:left;
+	width:50%;
+	@media (max-width: 480px) {
+		width: 100%;
+	}
+}
+
+.section-tests a.test_d8-theme-select{
+	display:block;
+	margin: 0;
+	padding: 50% 5%;
+	text-align: center;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+	&:hover { 
+		color: transparent;
+		background-color: rgba(255,255,255,1);
+  		-webkit-transform: scale(1);
+		transform: scale(1);
+		transition-property: background-color;
+		transition-duration: 2s;
+		transition-timing-fonction: linear;
+	}
+}
+.webmaster a.test_d8-theme-select{
+	background-color: $webmaster;
+	&:hover {
+		background: url(../images/lunettes-jaunes.png) no-repeat center center; 		
+	}
+}
+.themer a.test_d8-theme-select{
+	background-color:$themer;
+	&:hover {
+		background: url(../images/lunettes-vertes.png) no-repeat center center;	
+	}
+}
+.developpement a.test_d8-theme-select{
+	background-color:$developpement;
+	&:hover {
+		background: url(../images/lunettes-bleues.png) no-repeat center center; 		
+	}
+}
+.expert a.test_d8-theme-select{
+	background-color:$expert;
+	&:hover {
+		background: url(../images/lunettes-rouges.png) no-repeat center center; 		
+	}
+}
+/* FIN PAGE ACCUEIL DES 4 TESTS*/
+
+
+/* PAGE TEST : /test-drupal8/1 */
+.section-test {
+	padding: 20px 30px;
+	h1.js-quickedit-page-title {
+		font-family: 'titillium_websemiBold', sans-serif;
+		font-size: 25px;
+		color: $cgd8-blue;
+		text-transform: uppercase;
+		padding-left: 0;
+	}
+	.view-tests-drupal-8 {
+		h2 {
+			font-size: 25px;
+			font-family: 'titillium_websemiBold', sans-serif;
+		}
+		.btn {
+			width: 100%;
+			background-color: $light-blue;
+			color: $cgd8-blue;
+			font-size: 30px; 
+			text-transform: uppercase;
+			border: none;
+			font-family: 'titillium_websemiBold', sans-serif;
+			@include border-radius-0;
+			&:hover {
+				background-color: $cgd8-blue;
+				color: $color-white;
+			}
+			&:hover::before {
+				content: url(../images/icons/btn-goutte1-hover-blanc.png);
+			}
+			&::before {
+				content: url(../images/icons/btn-goutte2.png);
+				display: inline-block;
+				vertical-align: middle;
+				padding-right: 25px;
+			}
+		}
+	}
+}
+.test_d8-question{
+	margin:0 0 50px;
+}
+
+#test_d8-nav{
+position:absolute;
+bottom:0;
+left:50%;
+width:200px;
+transform:translateX(-50%);
+display:flex;
+}
+#test_d8-question-prev,
+#test_d8-question-next{
+flex:1;
+}
+#test_d8-question-prev[disabled],
+#test_d8-question-next[disabled]{
+pointer-events:none;
+}
+#test_d8-question-curr{
+display:block;
+padding:5px;
+margin:auto;
+text-align:center;
+flex:2;
+}
+#test_d8-submit{
+position:absolute;
+bottom:0;
+right:15px;
+}
+
+#test_d8-navisual{
+margin:0 0 20px;
+}
+.test_d8-navisual-item{
+display:block;
+width:20px;
+height:20px;
+border-radius:50%;
+line-height:20px;
+text-align:center;
+font-size:0.825em;
+cursor:pointer;
+float:left;
+margin:2px;
+color:#333;
+background:#eee;
+}
+.test_d8-navisual-item.answered{
+color:#fff;
+background:#3cf;
+}
+
+.test_d8-hidden{
+display:none;
+}
+
+
+
+/* compte à rebours page tests : /test-drupal8/1 */
+/* (le design doit rester le même, il correspond à celui des certifs officielles trained people) */
+#timer_qcm{
+float:right;
+font-size:28px;
+}
+.countdownHolder{
+/*width:450px;
+margin:0 auto;
+font:28px/1.5 'Open Sans Condensed',sans-serif;
+text-align:center;
+letter-spacing:-3px;*/
+}
+.position{
+display:inline-block;
+height:1.6em;
+overflow:hidden;
+position:relative;
+width:1.1em;
+}
+.digit{
+position:absolute;
+display:block;
+width:1em;
+background-color:#444;
+border-radius:0.2em;
+text-align:center;
+color:#fff;
+letter-spacing:-1px;
+}
+.digit.static{
+box-shadow:1px 1px 1px rgba(127, 127, 127, 0.5);
+background-image: linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+background-image: -o-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+background-image: -moz-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+background-image: -webkit-gradient(linear, left bottom, left top,
+	color-stop(0.5, #3A3A3A), color-stop(0.5, #444444));
+}
+.countWeeks,
+.countDiv0,
+.countDays,
+.countDiv1,
+.countHrs,
+.countDiv2{
+display:none !important;
+}
+.countDiv{
+display:inline-block;
+width:16px;
+height:1.6em;
+position:relative;
+}
+.countDiv:before,
+.countDiv:after{
+position:absolute;
+width:5px;
+height:5px;
+background-color:#444;
+border-radius:50%;
+left:50%;
+margin-left:-3px;
+top:0.5em;
+box-shadow:1px 1px 1px rgba(127, 127, 127, 0.5);
+content:'';
+}
+.countDiv:after{
+top:0.9em;
+}
+#timer_qcm-note{
+display:none;
+}
+
+
+/* Page résultat du test. */
+.test_d8-result{
+background:url(../images/lunettes-dev-ok.png) 0 0 no-repeat;
+padding:0 0 0 150px;
+min-height:100px;
+}
+.test_d8-result-failure{
+background-image:url(../images/lunettes-dev-ko.png);
+}
+
+
+/* graphique sur profil drupalien : /user/1 */
+
+@import 'https://code.highcharts.com/css/highcharts.css';
+#charts{
+width:100%;
+height:400px;
+}
+/* doc : https://www.highcharts.com/docs/chart-design-and-style/style-by-css */
+.highcharts-background{
+fill:#f8f8f8;
+}
+

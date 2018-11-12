@@ -1,0 +1,21 @@
+uuid: 5c5eb2ab-16ef-44c6-9e8f-a75378f2457f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_news_d8
+    - node.type.news_d8
+  module:
+    - datetime
+id: node.news_d8.field_date_news_d8
+field_name: field_date_news_d8
+entity_type: node
+bundle: news_d8
+label: 'Date de l''acualité'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

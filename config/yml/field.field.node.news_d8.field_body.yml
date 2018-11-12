@@ -1,0 +1,24 @@
+uuid: 55df8310-212e-42d5-8227-c0ef0ba11dbf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.news_d8
+  module:
+    - text
+_core:
+  default_config_hash: RIic0jeNeqfTdkcVd5hpzIAc8fR5R_qvIAQ_5wUkr44
+id: node.news_d8.field_body
+field_name: field_body
+entity_type: node
+bundle: news_d8
+label: Description
+description: 'La description de l''actualité courante'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

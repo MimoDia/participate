@@ -1,0 +1,1782 @@
+@charset "UTF-8";
+/*Default variables.*/
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+/* COLORS */
+/* FONTS */
+/* TITLE */
+/* NAVIGATION */
+/*Base-theme overrides.*/
+/**
+ * Mixins.
+ *
+ * 
+ *
+ */
+/*@mixin title-article {// style titre des articles
+	font-size: 1.750em;
+    text-transform: uppercase;
+    color: $cgd8-blue;
+    font-family: 'titillium_websemiBold', sans-serif;
+    text-decoration: none;
+}*/
+/* line 424, icons/*.png */
+.icons-sprite, .icons-arrow-down, .icons-arrow-left, .icons-arrow-right, .icons-arrow-up, .icons-btn-goutte1-hover-blanc, .icons-btn-goutte1-hover-bleu-fonce, .icons-btn-goutte1, .icons-btn-goutte2-hover-blanc, .icons-btn-goutte2, .icons-goutte-ajout-commentaire, .icons-goutte-audio, .icons-goutte-drupal-bg-profil, .icons-goutte-drupal-bg-user-dev-bleu, .icons-goutte-drupal-bg-user-expert-rouge, .icons-goutte-drupal-bg-user-themer-vert, .icons-goutte-drupal-bg-user-webm-jaune, .icons-goutte-participe-non-rouge, .icons-goutte-participe-oui-vert, .icons-goutte-participe-peut-etre-jaune, .icons-lecteur-photo-bleu, .icons-lecteur-video-bleu, .icons-logo-Ausy-blanc-rouge-sur-fd-bleu, .icons-logo-D8-header, .icons-logo-D8-hover-blanc, .icons-logo-ausy-blanc-rouge, .icons-loupe-blanche, .icons-loupe-bleue, .icons-lunettes-bleues-RTO, .icons-lunettes-dev-KO, .icons-lunettes-jaunes-RTO, .icons-lunettes-rouges-RTO, .icons-lunettes-test-dev-KO, .icons-lunettes-test-dev-OK, .icons-lunettes-test-expert-KO, .icons-lunettes-test-expert-OK, .icons-lunettes-test-themer-KO, .icons-lunettes-test-themer-OK, .icons-lunettes-test-webm-KO, .icons-lunettes-test-webm-OK, .icons-lunettes-vertes-RTO, .icons-picto-crayon-bleu, .icons-picto-pdf, .icons-picto-question {
+  background-image: url('/images/icons-se2d4a77255.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-down {
+  background-position: 0 -55px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-left {
+  background-position: -16px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-right {
+  background-position: -25px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-up {
+  background-position: -300px -110px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-blanc {
+  background-position: -132px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-bleu-fonce {
+  background-position: -88px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1 {
+  background-position: -294px -55px;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2-hover-blanc {
+  background-position: -44px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2 {
+  background-position: 0 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-ajout-commentaire {
+  background-position: -342px -415px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-audio {
+  background-position: 0 -502px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-profil {
+  background-position: -120px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-dev-bleu {
+  background-position: -194px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-expert-rouge {
+  background-position: -268px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-themer-vert {
+  background-position: 0 -245px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-webm-jaune {
+  background-position: 0 -330px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge {
+  background-position: -176px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge:hover, .icons-goutte-participe-non-rouge.goutte-participe-non-rouge-hover {
+  background-position: -368px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert {
+  background-position: -224px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert:hover, .icons-goutte-participe-oui-vert.goutte-participe-oui-vert-hover {
+  background-position: -338px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune {
+  background-position: -320px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune:hover, .icons-goutte-participe-peut-etre-jaune.goutte-participe-peut-etre-jaune-hover {
+  background-position: -272px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-photo-bleu {
+  background-position: -316px -110px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-video-bleu {
+  background-position: -56px -55px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-Ausy-blanc-rouge-sur-fd-bleu {
+  background-position: 0 -110px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-header {
+  background-position: -195px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-hover-blanc {
+  background-position: -317px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-ausy-blanc-rouge {
+  background-position: 0 -175px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-blanche {
+  background-position: -185px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-bleue {
+  background-position: -159px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-bleues-RTO {
+  background-position: 0 -1427px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-dev-KO {
+  background-position: -194px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-jaunes-RTO {
+  background-position: 0 -1167px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-rouges-RTO {
+  background-position: 0 -647px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-KO {
+  background-position: -314px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-OK {
+  background-position: 0 -415px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-KO {
+  background-position: -74px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-OK {
+  background-position: -194px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-KO {
+  background-position: -300px -175px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-OK {
+  background-position: -74px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-KO {
+  background-position: -314px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-OK {
+  background-position: -75px -502px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-vertes-RTO {
+  background-position: 0 -907px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu {
+  background-position: -34px -55px;
+  height: 22px;
+  width: 22px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu:hover, .icons-picto-crayon-bleu.picto-crayon-bleu-hover {
+  background-position: -137px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf {
+  background-position: -211px -55px;
+  height: 40px;
+  width: 29px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf:hover, .icons-picto-pdf.picto-pdf-hover {
+  background-position: -240px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-question {
+  background-position: -269px -55px;
+  height: 43px;
+  width: 25px;
+}
+
+/** TYPO titilliumweb **/
+@font-face {
+  font-family: 'titillium_webitalic';
+  src: url("../fonts/titilliumweb-italic.eot");
+  src: url("../fonts/titilliumweb-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-italic.woff2") format("woff2"), url("../fonts/titilliumweb-italic.woff") format("woff"), url("../fonts/titilliumweb-italic.ttf") format("truetype"), url("../fonts/titilliumweb-italic.svg#titillium_webitalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'titillium_weblight';
+  src: url("../fonts/titilliumweb-light.eot");
+  src: url("../fonts/titilliumweb-light.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-light.woff2") format("woff2"), url("../fonts/titilliumweb-light.woff") format("woff"), url("../fonts/titilliumweb-light.ttf") format("truetype"), url("../fonts/titilliumweb-light.svg#titillium_weblight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titillium_webregular';
+  src: url("../fonts/titilliumweb-regular.eot");
+  src: url("../fonts/titilliumweb-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-regular.woff2") format("woff2"), url("../fonts/titilliumweb-regular.woff") format("woff"), url("../fonts/titilliumweb-regular.ttf") format("truetype"), url("../fonts/titilliumweb-regular.svg#titillium_webregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titillium_websemiBold';
+  src: url("../fonts/titilliumweb-semiBold.eot");
+  src: url("../fonts/titilliumweb-semiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-semiBold.woff2") format("woff2"), url("../fonts/titilliumweb-semiBold.woff") format("woff"), url("../fonts/titilliumweb-semiBold.ttf") format("truetype"), url("../fonts/titilliumweb-semiBold.svg#titillium_websemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+/* SPRITE */
+/* line 424, icons/*.png */
+/* line 46, ../scss/style.scss */
+.icons-sprite, .icons-arrow-down, .icons-arrow-left, .icons-arrow-right, .icons-arrow-up, .icons-btn-goutte1-hover-blanc, .icons-btn-goutte1-hover-bleu-fonce, .icons-btn-goutte1, .icons-btn-goutte2-hover-blanc, .icons-btn-goutte2, .icons-goutte-ajout-commentaire, .icons-goutte-audio, .icons-goutte-drupal-bg-profil, .icons-goutte-drupal-bg-user-dev-bleu, .icons-goutte-drupal-bg-user-expert-rouge, .icons-goutte-drupal-bg-user-themer-vert, .icons-goutte-drupal-bg-user-webm-jaune, .icons-goutte-participe-non-rouge, .icons-goutte-participe-oui-vert, .icons-goutte-participe-peut-etre-jaune, .icons-lecteur-photo-bleu, .icons-lecteur-video-bleu, .icons-logo-Ausy-blanc-rouge-sur-fd-bleu, .icons-logo-D8-header, .icons-logo-D8-hover-blanc, .icons-logo-ausy-blanc-rouge, .icons-loupe-blanche, .icons-loupe-bleue, .icons-lunettes-bleues-RTO, .icons-lunettes-dev-KO, .icons-lunettes-jaunes-RTO, .icons-lunettes-rouges-RTO, .icons-lunettes-test-dev-KO, .icons-lunettes-test-dev-OK, .icons-lunettes-test-expert-KO, .icons-lunettes-test-expert-OK, .icons-lunettes-test-themer-KO, .icons-lunettes-test-themer-OK, .icons-lunettes-test-webm-KO, .icons-lunettes-test-webm-OK, .icons-lunettes-vertes-RTO, .icons-picto-crayon-bleu, .icons-picto-pdf, .icons-picto-question, .icons-arrow-down, .icons-arrow-left, .icons-arrow-right, .icons-arrow-up, .icons-btn-goutte1-hover-blanc, .icons-btn-goutte1-hover-bleu-fonce, .icons-btn-goutte1, .icons-btn-goutte2-hover-blanc, .icons-btn-goutte2, .icons-goutte-ajout-commentaire, .icons-goutte-audio, .icons-goutte-drupal-bg-profil, .icons-goutte-drupal-bg-user-dev-bleu, .icons-goutte-drupal-bg-user-expert-rouge, .icons-goutte-drupal-bg-user-themer-vert, .icons-goutte-drupal-bg-user-webm-jaune, .icons-goutte-participe-non-rouge, .icons-goutte-participe-oui-vert, .icons-goutte-participe-peut-etre-jaune, .icons-lecteur-photo-bleu, .icons-lecteur-video-bleu, .icons-logo-Ausy-blanc-rouge-sur-fd-bleu, .icons-logo-D8-header, .icons-logo-D8-hover-blanc, .icons-logo-ausy-blanc-rouge, .icons-loupe-blanche, .icons-loupe-bleue, .icons-lunettes-bleues-RTO, .icons-lunettes-dev-KO, .icons-lunettes-jaunes-RTO, .icons-lunettes-rouges-RTO, .icons-lunettes-test-dev-KO, .icons-lunettes-test-dev-OK, .icons-lunettes-test-expert-KO, .icons-lunettes-test-expert-OK, .icons-lunettes-test-themer-KO, .icons-lunettes-test-themer-OK, .icons-lunettes-test-webm-KO, .icons-lunettes-test-webm-OK, .icons-lunettes-vertes-RTO, .icons-picto-crayon-bleu, .icons-picto-pdf, .icons-picto-question {
+  background-image: url("/images/icons-se2d4a77255.png");
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 52, ../scss/style.scss */
+.icons-arrow-down {
+  background-position: 0 -55px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../scss/style.scss */
+.icons-arrow-left {
+  background-position: -16px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 66, ../scss/style.scss */
+.icons-arrow-right {
+  background-position: -25px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 73, ../scss/style.scss */
+.icons-arrow-up {
+  background-position: -300px -110px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 80, ../scss/style.scss */
+.icons-btn-goutte1-hover-blanc {
+  background-position: -132px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 87, ../scss/style.scss */
+.icons-btn-goutte1-hover-bleu-fonce {
+  background-position: -88px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 94, ../scss/style.scss */
+.icons-btn-goutte1 {
+  background-position: -294px -55px;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 101, ../scss/style.scss */
+.icons-btn-goutte2-hover-blanc {
+  background-position: -44px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 108, ../scss/style.scss */
+.icons-btn-goutte2 {
+  background-position: 0 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 115, ../scss/style.scss */
+.icons-goutte-ajout-commentaire {
+  background-position: -342px -415px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 122, ../scss/style.scss */
+.icons-goutte-audio {
+  background-position: 0 -502px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 129, ../scss/style.scss */
+.icons-goutte-drupal-bg-profil {
+  background-position: -120px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 136, ../scss/style.scss */
+.icons-goutte-drupal-bg-user-dev-bleu {
+  background-position: -194px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 143, ../scss/style.scss */
+.icons-goutte-drupal-bg-user-expert-rouge {
+  background-position: -268px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 150, ../scss/style.scss */
+.icons-goutte-drupal-bg-user-themer-vert {
+  background-position: 0 -245px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 157, ../scss/style.scss */
+.icons-goutte-drupal-bg-user-webm-jaune {
+  background-position: 0 -330px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 164, ../scss/style.scss */
+.icons-goutte-participe-non-rouge {
+  background-position: -176px 0;
+  height: 55px;
+  width: 48px;
+}
+
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 170, ../scss/style.scss */
+.icons-goutte-participe-non-rouge:hover, .icons-goutte-participe-non-rouge.goutte-participe-non-rouge-hover {
+  background-position: -368px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 175, ../scss/style.scss */
+.icons-goutte-participe-oui-vert {
+  background-position: -224px 0;
+  height: 55px;
+  width: 48px;
+}
+
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 181, ../scss/style.scss */
+.icons-goutte-participe-oui-vert:hover, .icons-goutte-participe-oui-vert.goutte-participe-oui-vert-hover {
+  background-position: -338px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 186, ../scss/style.scss */
+.icons-goutte-participe-peut-etre-jaune {
+  background-position: -320px 0;
+  height: 55px;
+  width: 48px;
+}
+
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 192, ../scss/style.scss */
+.icons-goutte-participe-peut-etre-jaune:hover, .icons-goutte-participe-peut-etre-jaune.goutte-participe-peut-etre-jaune-hover {
+  background-position: -272px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 197, ../scss/style.scss */
+.icons-lecteur-photo-bleu {
+  background-position: -316px -110px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 204, ../scss/style.scss */
+.icons-lecteur-video-bleu {
+  background-position: -56px -55px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 211, ../scss/style.scss */
+.icons-logo-Ausy-blanc-rouge-sur-fd-bleu {
+  background-position: 0 -110px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 218, ../scss/style.scss */
+.icons-logo-D8-header {
+  background-position: -195px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 225, ../scss/style.scss */
+.icons-logo-D8-hover-blanc {
+  background-position: -317px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 232, ../scss/style.scss */
+.icons-logo-ausy-blanc-rouge {
+  background-position: 0 -175px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 239, ../scss/style.scss */
+.icons-loupe-blanche {
+  background-position: -185px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 246, ../scss/style.scss */
+.icons-loupe-bleue {
+  background-position: -159px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 253, ../scss/style.scss */
+.icons-lunettes-bleues-RTO {
+  background-position: 0 -1427px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 260, ../scss/style.scss */
+.icons-lunettes-dev-KO {
+  background-position: -194px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 267, ../scss/style.scss */
+.icons-lunettes-jaunes-RTO {
+  background-position: 0 -1167px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 274, ../scss/style.scss */
+.icons-lunettes-rouges-RTO {
+  background-position: 0 -647px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 281, ../scss/style.scss */
+.icons-lunettes-test-dev-KO {
+  background-position: -314px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 288, ../scss/style.scss */
+.icons-lunettes-test-dev-OK {
+  background-position: 0 -415px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 295, ../scss/style.scss */
+.icons-lunettes-test-expert-KO {
+  background-position: -74px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 302, ../scss/style.scss */
+.icons-lunettes-test-expert-OK {
+  background-position: -194px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 309, ../scss/style.scss */
+.icons-lunettes-test-themer-KO {
+  background-position: -300px -175px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 316, ../scss/style.scss */
+.icons-lunettes-test-themer-OK {
+  background-position: -74px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 323, ../scss/style.scss */
+.icons-lunettes-test-webm-KO {
+  background-position: -314px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 330, ../scss/style.scss */
+.icons-lunettes-test-webm-OK {
+  background-position: -75px -502px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 337, ../scss/style.scss */
+.icons-lunettes-vertes-RTO {
+  background-position: 0 -907px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 344, ../scss/style.scss */
+.icons-picto-crayon-bleu {
+  background-position: -34px -55px;
+  height: 22px;
+  width: 22px;
+}
+
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 350, ../scss/style.scss */
+.icons-picto-crayon-bleu:hover, .icons-picto-crayon-bleu.picto-crayon-bleu-hover {
+  background-position: -137px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 355, ../scss/style.scss */
+.icons-picto-pdf {
+  background-position: -211px -55px;
+  height: 40px;
+  width: 29px;
+}
+
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 361, ../scss/style.scss */
+.icons-picto-pdf:hover, .icons-picto-pdf.picto-pdf-hover {
+  background-position: -240px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 366, ../scss/style.scss */
+.icons-picto-question {
+  background-position: -269px -55px;
+  height: 43px;
+  width: 25px;
+}
+
+/* /SPRITE */
+/* line 373, ../scss/style.scss */
+body {
+  font-size: 16px;
+  line-height: 1.42857143;
+  background-color: #39425b;
+  color: #39425b;
+  font-family: "titillium_webregular", sans-serif;
+}
+
+/* line 380, ../scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "titillium_webregular", sans-serif;
+  color: #39425b;
+}
+
+/* line 384, ../scss/style.scss */
+h1.page-header {
+  color: #0678be;
+  font-size: 1.75em;
+}
+
+/* line 388, ../scss/style.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 391, ../scss/style.scss */
+a:hover {
+  text-decoration: none;
+  color: #28a8e0;
+}
+
+/* line 395, ../scss/style.scss */
+.title-XL {
+  font-size: 2.5em;
+  font-family: "titillium_webregular", sans-serif;
+  color: white;
+}
+
+/* line 398, ../scss/style.scss */
+.navbar-default {
+  background-color: #39425b;
+}
+
+/* line 401, ../scss/style.scss */
+.navbar-collapse {
+  clear: both;
+}
+
+/* line 404, ../scss/style.scss */
+.navbar-default {
+  background-color: none;
+  border-color: transparent;
+}
+
+/* bloc alerte */
+/* line 409, ../scss/style.scss */
+.alert {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+/* asterisque */
+/* line 413, ../scss/style.scss */
+.form-required::after {
+  margin: 0 0 10px 3px;
+}
+
+/* boutons */
+/* line 417, ../scss/style.scss */
+.btn-submit {
+  margin-right: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 8px 15px 0;
+}
+/* line 422, ../scss/style.scss */
+.btn-submit::before {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+/* line 427, ../scss/style.scss */
+.btn-submit:hover {
+  background-color: transparent;
+}
+
+/* line 432, ../scss/style.scss */
+.btn-submit-black::before {
+  content: url(../images/btn-goutte2-XS.png);
+}
+/* line 435, ../scss/style.scss */
+.btn-submit-black:hover::before {
+  color: blue;
+  content: url(../images/btn-goutte2-hover-blanc-XS.png);
+}
+
+/* line 440, ../scss/style.scss */
+.btn-apply {
+  height: 45px;
+  vertical-align: middle;
+  padding: 0 15px 0;
+  font-family: 'titillium_websemiBold', sans-serif;
+  color: #0678be;
+}
+/* line 446, ../scss/style.scss */
+.btn-apply:hover {
+  color: #39425b;
+  background-color: transparent;
+}
+/* line 450, ../scss/style.scss */
+.btn-apply:focus, .btn-apply:focus, .btn-apply:actif {
+  color: #39425b;
+  background-color: transparent;
+}
+/* line 454, ../scss/style.scss */
+.btn-apply::before {
+  content: url(../images/btn-goutte2-XS.png);
+}
+/* line 457, ../scss/style.scss */
+.btn-apply:hover::before {
+  color: blue;
+  content: url(../images/btn-goutte2-hover-blanc-XS.png);
+}
+
+/* line 462, ../scss/style.scss */
+#edit-preview.btn-apply,
+#edit-preview--2.btn-apply {
+  position: absolute;
+  margin-right: 0;
+  padding-right: 0;
+  bottom: -52px;
+}
+/* line 468, ../scss/style.scss */
+#edit-preview.btn-apply span::before,
+#edit-preview--2.btn-apply span::before {
+  content: '';
+}
+
+/* arrow slideshow */
+/* line 473, ../scss/style.scss */
+.views-slideshow-controls-bottom ul.views-slideshow-pager-bullets {
+  position: relative;
+}
+/* line 475, ../scss/style.scss */
+.views-slideshow-controls-bottom ul.views-slideshow-pager-bullets li {
+  position: absolute;
+  padding: 0;
+  background-image: url(../images/icons-se2d4a77255.png) !important;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 9px;
+  background-color: white;
+}
+/* line 483, ../scss/style.scss */
+.views-slideshow-controls-bottom ul.views-slideshow-pager-bullets li:first-child {
+  background-position: -16px -55px !important;
+  left: 0;
+}
+/* line 487, ../scss/style.scss */
+.views-slideshow-controls-bottom ul.views-slideshow-pager-bullets li:last-child {
+  background-position: -25px -55px !important;
+  right: 0;
+}
+/* line 491, ../scss/style.scss */
+.views-slideshow-controls-bottom ul.views-slideshow-pager-bullets li.active {
+  background-color: white;
+}
+
+/* menu burger */
+/* line 498, ../scss/style.scss */
+.navbar-toggle {
+  float: left;
+}
+
+/*espaces entre les divs*/
+/* line 502, ../scss/style.scss */
+.region-content .views-element-container {
+  background-color: white;
+  margin: 0 0 40px;
+  padding: 20px 0 40px;
+}
+
+/* line 507, ../scss/style.scss */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* line 510, ../scss/style.scss */
+  .menu--main {
+    float: left;
+    width: 100%;
+    display: inline-flex;
+    margin: 10px 0 20px;
+  }
+  /* line 516, ../scss/style.scss */
+  .menu--main li {
+    display: inline-block;
+  }
+}
+
+/* line 521, ../scss/style.scss */
+.menu--main,
+.menu--account {
+  float: right;
+}
+
+/* HEADER */
+/* line 526, ../scss/style.scss */
+.logo-brand {
+  min-height: 170px;
+}
+/* line 528, ../scss/style.scss */
+.logo-brand > a {
+  margin: auto;
+}
+/* line 531, ../scss/style.scss */
+.logo-brand .logo {
+  max-width: 100%;
+}
+/* line 533, ../scss/style.scss */
+.logo-brand .logo:hover {
+  background: url(../images/logo-D8-hover-blanc.png) no-repeat;
+}
+/* line 537, ../scss/style.scss */
+.logo-brand .brand {
+  margin: 45px 0;
+}
+@media (max-width: 418px) {
+  /* line 537, ../scss/style.scss */
+  .logo-brand .brand {
+    margin: 15px 0;
+  }
+}
+/* line 542, ../scss/style.scss */
+.logo-brand .brand:hover {
+  text-decoration: none;
+  color: #28a8e0;
+}
+
+/* line 548, ../scss/style.scss */
+.header-username-and-picture {
+  position: relative;
+}
+/* line 550, ../scss/style.scss */
+.header-username-and-picture .views-field-user-picture {
+  background: url(../images/icons-se2d4a77255.png) no-repeat;
+  background-position: -120px -415px;
+  height: 85px;
+  width: 74px;
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 551, ../scss/style.scss */
+.header-username-and-picture .views-field-user-picture .img-responsive,
+.header-username-and-picture .views-field-user-picture .field-content {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 64px;
+  height: 60px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 561, ../scss/style.scss */
+.header-username-and-picture .views-field-user-picture .field-content {
+  background-color: white;
+  margin-top: 22px;
+  margin-left: 5px;
+  position: relative;
+}
+/* line 571, ../scss/style.scss */
+.header-username-and-picture .views-field-view-user {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+}
+/* line 575, ../scss/style.scss */
+.header-username-and-picture .views-field-view-user a {
+  font-size: 1.563em;
+}
+/* line 580, ../scss/style.scss */
+.header-username-and-picture .views-field-nothing span {
+  display: block;
+  float: right;
+  width: 100%;
+}
+/* line 585, ../scss/style.scss */
+.header-username-and-picture .views-field-nothing a.logout {
+  display: block;
+  float: right;
+}
+/* line 588, ../scss/style.scss */
+.header-username-and-picture .views-field-nothing a.logout::before {
+  content: url(../images/btn-goutte1-XS.png);
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+/* line 594, ../scss/style.scss */
+.header-username-and-picture .views-field-nothing a.logout:hover {
+  color: #28a8e0;
+}
+/* line 596, ../scss/style.scss */
+.header-username-and-picture .views-field-nothing a.logout:hover::before {
+  content: url(../images/btn-goutte1-hover-blanc-XS.png);
+}
+/* line 602, ../scss/style.scss */
+.header-username-and-picture a {
+  color: #fff;
+  font-family: 'titillium_websemiBold', sans-serif;
+  font-size: 1.25em;
+}
+/* line 607, ../scss/style.scss */
+.header-username-and-picture div.views-field {
+  text-align: right;
+}
+
+/* /HEADER */
+/* NAV + RECHERCHE  */
+/* line 614, ../scss/style.scss */
+.tab-nav .navbar-nav > li > a {
+  font-size: 1.750em;
+  margin-top: 14px;
+  padding: 10px 10px 5px 10px;
+}
+@media (max-width: 767px) {
+  /* line 614, ../scss/style.scss */
+  .tab-nav .navbar-nav > li > a {
+    font-size: 1em;
+  }
+}
+/* line 621, ../scss/style.scss */
+.tab-nav .navbar-nav > li > a:hover {
+  color: #39425b;
+}
+@media (max-width: 1190px) and (min-width: 768px) {
+  /* line 621, ../scss/style.scss */
+  .tab-nav .navbar-nav > li > a:hover {
+    color: #28a8e0;
+  }
+}
+/* line 629, ../scss/style.scss */
+.tab-nav .navbar-nav li::last-child a {
+  padding-right: 0;
+}
+/* line 632, ../scss/style.scss */
+.tab-nav .navbar-nav li.active > a {
+  background-color: #28a8e0;
+  color: white;
+}
+/* line 635, ../scss/style.scss */
+.tab-nav .navbar-nav li.active > a:hover {
+  background-color: #28a8e0;
+  cursor: default;
+}
+/* line 640, ../scss/style.scss */
+.tab-nav .navbar-nav li a.dropdown-toggle {
+  padding-right: 5px;
+}
+/* line 642, ../scss/style.scss */
+.tab-nav .navbar-nav li a.dropdown-toggle:hover {
+  color: #39425b;
+}
+@media (max-width: 1190px) and (min-width: 768px) {
+  /* line 642, ../scss/style.scss */
+  .tab-nav .navbar-nav li a.dropdown-toggle:hover {
+    color: #28a8e0;
+  }
+}
+/* line 648, ../scss/style.scss */
+.tab-nav .navbar-nav li a.dropdown-toggle .circle {
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 0 4px;
+  background-color: white;
+  width: 4px;
+  height: 4px;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: right;
+}
+/* line 656, ../scss/style.scss */
+.tab-nav .navbar-nav li .dropdown-menu:hover {
+  background-color: transparent;
+  height: 35px;
+}
+/* line 660, ../scss/style.scss */
+.tab-nav .navbar-nav li .dropdown-menu li.active a {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+
+/* line 669, ../scss/style.scss */
+.navbar-default .navbar-nav > .open > a {
+  background-color: transparent;
+  color: #28a8e0;
+}
+/* line 672, ../scss/style.scss */
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: #28a8e0;
+}
+
+/* line 678, ../scss/style.scss */
+.header-cgd8, header {
+  padding: 0;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  /* line 678, ../scss/style.scss */
+  .header-cgd8, header {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+/* line 685, ../scss/style.scss */
+.header-cgd8 .navbar-header, header .navbar-header {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 768px) {
+  /* line 685, ../scss/style.scss */
+  .header-cgd8 .navbar-header, header .navbar-header {
+    border-bottom: 0;
+  }
+}
+/* line 694, ../scss/style.scss */
+.header-cgd8 .nav-header,
+.header-cgd8 .navbar-collapse, header .nav-header,
+header .navbar-collapse {
+  padding: 0;
+  height: 50px !important;
+  background-color: rgba(6, 120, 190, 0.5);
+}
+@media (max-width: 768px) {
+  /* line 694, ../scss/style.scss */
+  .header-cgd8 .nav-header,
+  .header-cgd8 .navbar-collapse, header .nav-header,
+  header .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #39425b;
+    height: 130px;
+  }
+}
+/* line 705, ../scss/style.scss */
+.header-cgd8 .nav-header:hover,
+.header-cgd8 .navbar-collapse:hover, header .nav-header:hover,
+header .navbar-collapse:hover {
+  background-color: white;
+  /*border: 1px solid $light-blue;*/
+  display: block;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: -all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+}
+/* line 712, ../scss/style.scss */
+.header-cgd8 .nav-header .navigation-collapsible:hover,
+.header-cgd8 .navbar-collapse .navigation-collapsible:hover, header .nav-header .navigation-collapsible:hover,
+header .navbar-collapse .navigation-collapsible:hover {
+  background-color: rgba(40, 168, 224, 0.7);
+  display: block;
+  /*border: 1px solid $light-blue;*/
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: -all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+}
+@media (max-width: 1190px) and (min-width: 768px) {
+  /* line 712, ../scss/style.scss */
+  .header-cgd8 .nav-header .navigation-collapsible:hover,
+  .header-cgd8 .navbar-collapse .navigation-collapsible:hover, header .nav-header .navigation-collapsible:hover,
+  header .navbar-collapse .navigation-collapsible:hover {
+    background-color: #39425b;
+  }
+}
+@media (max-width: 1190px) and (min-width: 768px) {
+  /* line 722, ../scss/style.scss */
+  .header-cgd8 .nav-header .main-nav-header,
+  .header-cgd8 .navbar-collapse .main-nav-header, header .nav-header .main-nav-header,
+  header .navbar-collapse .main-nav-header {
+    height: 48px;
+  }
+  /* line 725, ../scss/style.scss */
+  .header-cgd8 .nav-header .main-nav-header:hover,
+  .header-cgd8 .navbar-collapse .main-nav-header:hover, header .nav-header .main-nav-header:hover,
+  header .navbar-collapse .main-nav-header:hover {
+    /*background-color: rgba(40, 168, 224,1);*/
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 722, ../scss/style.scss */
+  .header-cgd8 .nav-header .main-nav-header,
+  .header-cgd8 .navbar-collapse .main-nav-header, header .nav-header .main-nav-header,
+  header .navbar-collapse .main-nav-header {
+    padding-left: 0;
+  }
+}
+/* line 733, ../scss/style.scss */
+.header-cgd8 .nav-header .main-nav-header ul.navbar-nav,
+.header-cgd8 .navbar-collapse .main-nav-header ul.navbar-nav, header .nav-header .main-nav-header ul.navbar-nav,
+header .navbar-collapse .main-nav-header ul.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  float: none;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  /* line 733, ../scss/style.scss */
+  .header-cgd8 .nav-header .main-nav-header ul.navbar-nav,
+  .header-cgd8 .navbar-collapse .main-nav-header ul.navbar-nav, header .nav-header .main-nav-header ul.navbar-nav,
+  header .navbar-collapse .main-nav-header ul.navbar-nav {
+    margin: 0;
+  }
+  /* line 740, ../scss/style.scss */
+  .header-cgd8 .nav-header .main-nav-header ul.navbar-nav li > a,
+  .header-cgd8 .navbar-collapse .main-nav-header ul.navbar-nav li > a, header .nav-header .main-nav-header ul.navbar-nav li > a,
+  header .navbar-collapse .main-nav-header ul.navbar-nav li > a {
+    margin: 0;
+  }
+}
+@media (max-width: 420px) {
+  /* line 745, ../scss/style.scss */
+  .header-cgd8 .nav-header .main-nav-header ul.navbar-nav li > a,
+  .header-cgd8 .navbar-collapse .main-nav-header ul.navbar-nav li > a, header .nav-header .main-nav-header ul.navbar-nav li > a,
+  header .navbar-collapse .main-nav-header ul.navbar-nav li > a {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 1190px) and (min-width: 768px) {
+  /* line 751, ../scss/style.scss */
+  .header-cgd8 .nav-header .search-block-form,
+  .header-cgd8 .navbar-collapse .search-block-form, header .nav-header .search-block-form,
+  header .navbar-collapse .search-block-form {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 751, ../scss/style.scss */
+  .header-cgd8 .nav-header .search-block-form,
+  .header-cgd8 .navbar-collapse .search-block-form, header .nav-header .search-block-form,
+  header .navbar-collapse .search-block-form {
+    width: 80%;
+    top: -50px;
+    right: 0;
+  }
+}
+/* line 762, ../scss/style.scss */
+.header-cgd8 .main-nav-header, header .main-nav-header {
+  float: right;
+}
+@media (max-width: 768px) {
+  /* line 762, ../scss/style.scss */
+  .header-cgd8 .main-nav-header, header .main-nav-header {
+    /*margin-top: 50px;*/
+    width: 100%;
+  }
+}
+/* line 769, ../scss/style.scss */
+.header-cgd8 .form-search, header .form-search {
+  background-color: transparent;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  border: none;
+}
+/* line 777, ../scss/style.scss */
+.header-cgd8 .form-group, header .form-group {
+  padding: 0;
+  margin: 0;
+}
+/* line 781, ../scss/style.scss */
+.header-cgd8 .input-group, header .input-group {
+  border-bottom: 1px solid white;
+}
+@media (max-width: 1198px) and (min-width: 768px) {
+  /* line 781, ../scss/style.scss */
+  .header-cgd8 .input-group, header .input-group {
+    border-top: 1px solid white;
+    margin-top: 22px;
+  }
+}
+/* line 787, ../scss/style.scss */
+.header-cgd8 .input-group .form-search-header, header .input-group .form-search-header {
+  color: white !important;
+  font-family: 'titillium_websemiBold', sans-serif;
+  padding-left: 5px;
+  border: none;
+}
+/* line 794, ../scss/style.scss */
+.header-cgd8 button, header button {
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border: 0;
+  font-size: 20px;
+}
+/* line 800, ../scss/style.scss */
+.header-cgd8 button:hover, header button:hover {
+  color: #28a8e0;
+  background-color: transparent;
+}
+/* line 805, ../scss/style.scss */
+.header-cgd8 .dropdown-menu, header .dropdown-menu {
+  top: -45px;
+  border: none;
+  box-shadow: none;
+  left: -640px;
+  z-index: 1000;
+  background-color: transparent;
+  height: 40px;
+  padding-bottom: 0;
+}
+@media (max-width: 1190px) and (min-width: 768px) {
+  /* line 805, ../scss/style.scss */
+  .header-cgd8 .dropdown-menu, header .dropdown-menu {
+    top: 45px;
+    padding-top: 0;
+    left: -538px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 805, ../scss/style.scss */
+  .header-cgd8 .dropdown-menu, header .dropdown-menu {
+    left: 350px;
+  }
+}
+/* line 822, ../scss/style.scss */
+.header-cgd8 .dropdown-menu:hover, header .dropdown-menu:hover {
+  background-color: #39425b;
+}
+/* line 825, ../scss/style.scss */
+.header-cgd8 .dropdown-menu li, header .dropdown-menu li {
+  display: table-cell;
+}
+/* line 827, ../scss/style.scss */
+.header-cgd8 .dropdown-menu li a, header .dropdown-menu li a {
+  display: inline-block;
+  color: #28a8e0;
+  font-size: 1.675em;
+  opacity: 1;
+}
+@media (max-width: 1190px) and (min-width: 768px) {
+  /* line 827, ../scss/style.scss */
+  .header-cgd8 .dropdown-menu li a, header .dropdown-menu li a {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 767px) {
+  /* line 827, ../scss/style.scss */
+  .header-cgd8 .dropdown-menu li a, header .dropdown-menu li a {
+    font-size: 0.9em;
+  }
+}
+/* line 837, ../scss/style.scss */
+.header-cgd8 .dropdown-menu li a:hover, header .dropdown-menu li a:hover {
+  color: white;
+}
+/* line 843, ../scss/style.scss */
+.header-cgd8 .navigation-collapsible, header .navigation-collapsible {
+  position: relative;
+}
+@media (max-width: 768px) {
+  /* line 845, ../scss/style.scss */
+  .header-cgd8 .navigation-collapsible .search-block-form, header .navigation-collapsible .search-block-form {
+    position: absolute;
+  }
+}
+/* line 851, ../scss/style.scss */
+.header-cgd8 .navbar-toggle, header .navbar-toggle {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+/* line 857, ../scss/style.scss */
+.header-cgd8 .navbar-toggle:hover, header .navbar-toggle:hover {
+  background-color: transparent;
+}
+/* line 860, ../scss/style.scss */
+.header-cgd8 .navbar-toggle .icon-bar:hover, header .navbar-toggle .icon-bar:hover {
+  color: #28a8e0;
+  width: 4px;
+}
+/* line 865, ../scss/style.scss */
+.header-cgd8 .navbar-collapse, header .navbar-collapse {
+  border: none;
+  box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -webkit-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -moz-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -ms-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -o-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+}
+
+/* /NAV + RECHERHCE  */
+/* MAIN */
+/* line 874, ../scss/style.scss */
+.main-container {
+  background-color: #fff;
+  padding: 20px 0;
+  color: #2c3e50;
+}
+
+/* line 879, ../scss/style.scss */
+.section-filet,
+.news-d8 {
+  border-bottom: 1px solid #cdd0d6;
+  padding-bottom: 30px;
+}
+
+/* FILTRE ACTUS / EVENEMENTS */
+/* line 885, ../scss/style.scss */
+.section-rubric {
+  /* article des rubriques */
+}
+/* line 886, ../scss/style.scss */
+.section-rubric h1.page-header {
+  padding: 0 10px 0 30px;
+}
+/* line 889, ../scss/style.scss */
+.section-rubric .views-exposed-form,
+.section-rubric .views-exposed-form.bef-exposed-form {
+  padding: 0;
+  background-color: #28a8e0;
+}
+/* line 893, ../scss/style.scss */
+.section-rubric .views-exposed-form .form-control,
+.section-rubric .views-exposed-form.bef-exposed-form .form-control {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: 8px solid #28a8e0;
+  border-left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-family: 'titillium_websemiBold', sans-serif;
+  padding: 0 5px 0 10px;
+  box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -webkit-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -moz-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -ms-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+  -o-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+}
+/* line 903, ../scss/style.scss */
+.section-rubric .views-exposed-form .input-group-addon,
+.section-rubric .views-exposed-form.bef-exposed-form .input-group-addon {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: 0;
+  background-color: transparent;
+}
+/* line 907, ../scss/style.scss */
+.section-rubric .views-exposed-form .input-group-addon .glyphicon,
+.section-rubric .views-exposed-form.bef-exposed-form .input-group-addon .glyphicon {
+  color: #39425b !important;
+}
+/* line 911, ../scss/style.scss */
+.section-rubric .views-exposed-form .js-form-item,
+.section-rubric .views-exposed-form.bef-exposed-form .js-form-item {
+  margin: 0 0 0 27%;
+}
+@media (max-width: 1200px) {
+  /* line 911, ../scss/style.scss */
+  .section-rubric .views-exposed-form .js-form-item,
+  .section-rubric .views-exposed-form.bef-exposed-form .js-form-item {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 990px) {
+  /* line 911, ../scss/style.scss */
+  .section-rubric .views-exposed-form .js-form-item,
+  .section-rubric .views-exposed-form.bef-exposed-form .js-form-item {
+    margin-top: 15px;
+  }
+}
+/* line 920, ../scss/style.scss */
+.section-rubric .views-exposed-form .form-actions,
+.section-rubric .views-exposed-form.bef-exposed-form .form-actions {
+  float: right;
+}
+/* line 924, ../scss/style.scss */
+.section-rubric .select-wrapper {
+  width: 220px;
+}
+/* line 926, ../scss/style.scss */
+.section-rubric .select-wrapper select {
+  width: 225px;
+}
+/* line 928, ../scss/style.scss */
+.section-rubric .select-wrapper select option {
+  background-color: #28a8e0;
+  color: white;
+  padding-left: 10px;
+  border: 1px solid #28a8e0;
+  box-shadow: none;
+}
+/* line 934, ../scss/style.scss */
+.section-rubric .select-wrapper select option:hover {
+  background-color: #39425b;
+}
+/* line 938, ../scss/style.scss */
+.section-rubric .select-wrapper select option[selected=selected] {
+  background-color: #39425b;
+}
+/* line 942, ../scss/style.scss */
+.section-rubric .select-wrapper::after {
+  color: white;
+  margin-top: -.4em;
+}
+/* line 947, ../scss/style.scss */
+.section-rubric .views-field-title a,
+.section-rubric .news-d8 h2 .quickedit-field,
+.section-rubric .title-article {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #39425b;
+  font-family: 'titillium_websemiBold', sans-serif;
+  text-decoration: none;
+  margin: 20px 0;
+  vertical-align: text-top;
+}
+/* line 957, ../scss/style.scss */
+.section-rubric .views-field-title a:hover,
+.section-rubric .news-d8 h2 .quickedit-field:hover,
+.section-rubric .title-article:hover {
+  color: #28a8e0;
+}
+/* line 961, ../scss/style.scss */
+.section-rubric .views-field-field-body {
+  font-size: 20px;
+  color: #39425b;
+  max-height: 120px;
+  overflow: hidden;
+}
+/* line 966, ../scss/style.scss */
+.section-rubric .views-field-field-body::after {
+  content: '(...)';
+  position: absolute;
+  top: 145px;
+  right: 70px;
+  background-color: white;
+  padding-left: 18px;
+}
+/* line 975, ../scss/style.scss */
+.section-rubric .form-group {
+  padding-bottom: 0;
+}
+/* line 979, ../scss/style.scss */
+.section-rubric .container-article {
+  padding: 50px 30px 20px;
+}
+/* line 981, ../scss/style.scss */
+.section-rubric .container-article .container-infos h2 {
+  margin: 0;
+  font-size: 22px;
+}
+/* line 986, ../scss/style.scss */
+.section-rubric .img-responsive {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  /* line 986, ../scss/style.scss */
+  .section-rubric .img-responsive {
+    margin-bottom: 20px;
+  }
+}
+/* line 992, ../scss/style.scss */
+.section-rubric .description_news p {
+  font-size: 20px;
+  color: #39425b;
+}
+/* line 995, ../scss/style.scss */
+.section-rubric .description_news p::after {
+  content: '...';
+  text-align: right;
+}
+/* line 1000, ../scss/style.scss */
+.section-rubric .tags_news {
+  padding-top: 15px;
+}
+/* line 1002, ../scss/style.scss */
+.section-rubric .tags_news .field--item {
+  display: inline-block;
+  float: left;
+  background-color: #39425b;
+  padding: 0 20px;
+  color: white;
+  font-size: 17px;
+  margin-right: 20px;
+  border: 1px solid #a39b9b;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+/* line 1012, ../scss/style.scss */
+.section-rubric .tags_news .field--item a {
+  color: white;
+}
+/* line 1015, ../scss/style.scss */
+.section-rubric .tags_news .field--item::before {
+  content: '#';
+}
+/* line 1018, ../scss/style.scss */
+.section-rubric .tags_news .field--item:hover {
+  background-color: #28a8e0;
+}
+/* line 1023, ../scss/style.scss */
+.section-rubric .date_news {
+  float: right;
+}
+/* line 1025, ../scss/style.scss */
+.section-rubric .date_news time {
+  background-color: #39425b;
+  padding: 5px;
+  color: white;
+  font-size: 22px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  height: 100px;
+  width: 50px;
+  display: block;
+  text-align: center;
+  border: 1px solid #a39b9b;
+}
+
+/* /MAIN */
+/* FOOTER */
+/* line 1042, ../scss/style.scss */
+footer.footer {
+  margin-top: 10px;
+}
+
+/* line 1046, ../scss/style.scss */
+.container ul li a:hover {
+  color: #28a8e0;
+  background-color: transparent;
+}
+
+/* line 1051, ../scss/style.scss */
+.footer-text {
+  font-size: 1.563em;
+  padding: 10px 0 0;
+  text-align: center;
+  color: white;
+}
+
+/* line 1057, ../scss/style.scss */
+.menu--footer {
+  padding: 10px 0 0;
+  text-align: right;
+}
+/* line 1060, ../scss/style.scss */
+.menu--footer a {
+  font-size: 1.563em;
+  padding: 0 !important;
+  color: white;
+}
+
+/*#search-block-form{
+  margin: 0;
+  padding: 0;
+}*/
+/* user header */
+/* changement spécial GIT */
+/* line 1076, ../scss/style.scss */
+#block-views-block-user-account-menu-custom a {
+  color: #fff;
+}
+/* line 1078, ../scss/style.scss */
+#block-views-block-user-account-menu-custom a:hover {
+  color: #28a8e0;
+}
+/* line 1082, ../scss/style.scss */
+#block-views-block-user-account-menu-custom div.views-field.views-field-nothing {
+  text-align: right;
+}
+
+/* /FOOTER */

@@ -1,0 +1,6 @@
+name: Redirect user custom
+description: 'Ce module redirect les utilisateur vers la page login apres deconection'
+package: Custom
+type: module
+version: VERSION
+core: '8.x'

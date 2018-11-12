@@ -1,0 +1,1086 @@
+ /*Default variables.*/
+@import "default-variables";
+
+ /*Base-theme overrides.*/
+@import 'overrides';
+
+//mixins
+@import 'mixins';
+
+//sprite
+@import 'icons';
+
+/** TYPO titilliumweb **/
+@font-face {
+  font-family: 'titillium_webitalic';
+  src: url("../fonts/titilliumweb-italic.eot");
+  src: url("../fonts/titilliumweb-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-italic.woff2") format("woff2"), url("../fonts/titilliumweb-italic.woff") format("woff"), url("../fonts/titilliumweb-italic.ttf") format("truetype"), url("../fonts/titilliumweb-italic.svg#titillium_webitalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'titillium_weblight';
+  src: url("../fonts/titilliumweb-light.eot");
+  src: url("../fonts/titilliumweb-light.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-light.woff2") format("woff2"), url("../fonts/titilliumweb-light.woff") format("woff"), url("../fonts/titilliumweb-light.ttf") format("truetype"), url("../fonts/titilliumweb-light.svg#titillium_weblight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titillium_webregular';
+  src: url("../fonts/titilliumweb-regular.eot");
+  src: url("../fonts/titilliumweb-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-regular.woff2") format("woff2"), url("../fonts/titilliumweb-regular.woff") format("woff"), url("../fonts/titilliumweb-regular.ttf") format("truetype"), url("../fonts/titilliumweb-regular.svg#titillium_webregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titillium_websemiBold';
+  src: url("../fonts/titilliumweb-semiBold.eot");
+  src: url("../fonts/titilliumweb-semiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/titilliumweb-semiBold.woff2") format("woff2"), url("../fonts/titilliumweb-semiBold.woff") format("woff"), url("../fonts/titilliumweb-semiBold.ttf") format("truetype"), url("../fonts/titilliumweb-semiBold.svg#titillium_websemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+/* SPRITE */
+/* line 424, icons/*.png */
+.icons-sprite, .icons-arrow-down, .icons-arrow-left, .icons-arrow-right, .icons-arrow-up, .icons-btn-goutte1-hover-blanc, .icons-btn-goutte1-hover-bleu-fonce, .icons-btn-goutte1, .icons-btn-goutte2-hover-blanc, .icons-btn-goutte2, .icons-goutte-ajout-commentaire, .icons-goutte-audio, .icons-goutte-drupal-bg-profil, .icons-goutte-drupal-bg-user-dev-bleu, .icons-goutte-drupal-bg-user-expert-rouge, .icons-goutte-drupal-bg-user-themer-vert, .icons-goutte-drupal-bg-user-webm-jaune, .icons-goutte-participe-non-rouge, .icons-goutte-participe-oui-vert, .icons-goutte-participe-peut-etre-jaune, .icons-lecteur-photo-bleu, .icons-lecteur-video-bleu, .icons-logo-Ausy-blanc-rouge-sur-fd-bleu, .icons-logo-D8-header, .icons-logo-D8-hover-blanc, .icons-logo-ausy-blanc-rouge, .icons-loupe-blanche, .icons-loupe-bleue, .icons-lunettes-bleues-RTO, .icons-lunettes-dev-KO, .icons-lunettes-jaunes-RTO, .icons-lunettes-rouges-RTO, .icons-lunettes-test-dev-KO, .icons-lunettes-test-dev-OK, .icons-lunettes-test-expert-KO, .icons-lunettes-test-expert-OK, .icons-lunettes-test-themer-KO, .icons-lunettes-test-themer-OK, .icons-lunettes-test-webm-KO, .icons-lunettes-test-webm-OK, .icons-lunettes-vertes-RTO, .icons-picto-crayon-bleu, .icons-picto-pdf, .icons-picto-question {
+  background-image: url('/images/icons-se2d4a77255.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-down {
+  background-position: 0 -55px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-left {
+  background-position: -16px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-right {
+  background-position: -25px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-up {
+  background-position: -300px -110px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-blanc {
+  background-position: -132px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-bleu-fonce {
+  background-position: -88px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1 {
+  background-position: -294px -55px;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2-hover-blanc {
+  background-position: -44px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2 {
+  background-position: 0 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-ajout-commentaire {
+  background-position: -342px -415px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-audio {
+  background-position: 0 -502px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-profil {
+  background-position: -120px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-dev-bleu {
+  background-position: -194px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-expert-rouge {
+  background-position: -268px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-themer-vert {
+  background-position: 0 -245px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-webm-jaune {
+  background-position: 0 -330px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge {
+  background-position: -176px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge:hover, .icons-goutte-participe-non-rouge.goutte-participe-non-rouge-hover {
+  background-position: -368px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert {
+  background-position: -224px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert:hover, .icons-goutte-participe-oui-vert.goutte-participe-oui-vert-hover {
+  background-position: -338px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune {
+  background-position: -320px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune:hover, .icons-goutte-participe-peut-etre-jaune.goutte-participe-peut-etre-jaune-hover {
+  background-position: -272px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-photo-bleu {
+  background-position: -316px -110px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-video-bleu {
+  background-position: -56px -55px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-Ausy-blanc-rouge-sur-fd-bleu {
+  background-position: 0 -110px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-header {
+  background-position: -195px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-hover-blanc {
+  background-position: -317px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-ausy-blanc-rouge {
+  background-position: 0 -175px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-blanche {
+  background-position: -185px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-bleue {
+  background-position: -159px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-bleues-RTO {
+  background-position: 0 -1427px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-dev-KO {
+  background-position: -194px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-jaunes-RTO {
+  background-position: 0 -1167px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-rouges-RTO {
+  background-position: 0 -647px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-KO {
+  background-position: -314px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-OK {
+  background-position: 0 -415px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-KO {
+  background-position: -74px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-OK {
+  background-position: -194px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-KO {
+  background-position: -300px -175px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-OK {
+  background-position: -74px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-KO {
+  background-position: -314px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-OK {
+  background-position: -75px -502px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-vertes-RTO {
+  background-position: 0 -907px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu {
+  background-position: -34px -55px;
+  height: 22px;
+  width: 22px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu:hover, .icons-picto-crayon-bleu.picto-crayon-bleu-hover {
+  background-position: -137px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf {
+  background-position: -211px -55px;
+  height: 40px;
+  width: 29px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf:hover, .icons-picto-pdf.picto-pdf-hover {
+  background-position: -240px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-question {
+  background-position: -269px -55px;
+  height: 43px;
+  width: 25px;
+}
+/* /SPRITE */
+
+body {
+    font-size: 16px;
+    line-height: 1.42857143;
+    background-color:$cgd8-blue;
+    color: $cgd8-blue;
+    font-family: $cgd8-font;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $cgd8-font;
+    color: $cgd8-blue;
+}
+h1.page-header {
+    color: $drupal-blue;
+    font-size: 1.75em;
+}
+a {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: $light-blue;
+}
+.title-XL {
+  @include title-XL;
+}
+.navbar-default {
+  background-color: $cgd8-blue;
+}
+.navbar-collapse {
+  clear: both;
+}
+.navbar-default {
+  background-color: none;
+  border-color: transparent;
+}
+/* bloc alerte */
+.alert {
+  @include border-radius-0;
+}
+/* asterisque */
+.form-required::after {
+  margin: 0 0 10px 3px;
+}
+/* boutons */
+.btn-submit {
+  margin-right: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 8px 15px 0;
+  &::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+  &:hover {
+    background-color: transparent;
+  }
+}
+.btn-submit-black {
+  &::before {
+    content: url(../images/btn-goutte2-XS.png);
+  }
+  &:hover::before {
+    color: blue;
+    content: url(../images/btn-goutte2-hover-blanc-XS.png);
+  }
+}
+.btn-apply {
+  height: 45px;
+  vertical-align: middle;
+  padding: 0 15px 0;
+  font-family: 'titillium_websemiBold', sans-serif;
+  color: $drupal-blue;
+  &:hover {
+    color: $cgd8-blue;
+    background-color: transparent;
+  }
+  &:focus, &:focus, &:actif {
+    color: $cgd8-blue;
+    background-color: transparent;
+  }
+  &::before {
+    content: url(../images/btn-goutte2-XS.png);
+  }
+  &:hover::before {
+    color: blue;
+    content: url(../images/btn-goutte2-hover-blanc-XS.png);
+  }
+}
+#edit-preview.btn-apply,
+#edit-preview--2.btn-apply {
+  position: absolute;
+  margin-right: 0;
+  padding-right: 0;
+  bottom: -52px;
+  span::before {
+    content: '';
+  }
+}
+/* arrow slideshow */
+.views-slideshow-controls-bottom ul.views-slideshow-pager-bullets {
+  position: relative;
+  li {
+    position: absolute;
+    padding: 0;
+    background-image: url(../images/icons-se2d4a77255.png) !important;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 9px;
+    background-color: white;
+    &:first-child {
+      background-position: -16px -55px !important;
+      left: 0;
+    }
+    &:last-child {
+      background-position: -25px -55px !important;
+      right: 0;
+    }
+    &.active {
+      background-color: white;
+    }
+  }
+}
+
+/* menu burger */
+.navbar-toggle {
+  float: left;
+}
+/*espaces entre les divs*/
+.region-content .views-element-container {
+  background-color: white;
+  margin: 0 0 40px;
+  padding: 20px 0 40px;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+}
+.menu--main {
+  @media (max-width: 768px){
+    float: left;
+    width: 100%;
+    display: inline-flex;
+    margin: 10px 0 20px;
+    li {
+      display: inline-block;
+    }
+  }
+}
+.menu--main,
+.menu--account {
+  float: right;
+}
+/* HEADER */
+.logo-brand {
+  min-height: 170px;
+  > a {
+    margin: auto;
+  }
+  .logo {
+    max-width: 100%;
+    &:hover {
+      background: url(../images/logo-D8-hover-blanc.png) no-repeat; 
+    }
+  }
+  .brand {
+    margin: 45px 0;
+    @media (max-width: 418px) {
+      margin: 15px 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $light-blue;
+    }
+  }
+}
+.header-username-and-picture {
+  position: relative;
+  .views-field-user-picture {
+    .img-responsive,
+    .field-content {
+      @include border-radius-50;
+      width: 64px;
+      height: 60px;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .field-content {
+      background-color: white;
+      margin-top: 22px;
+      margin-left: 5px;
+      position: relative;
+    }
+    @include bg-img-user-CGD8;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .views-field-view-user {
+    display: inline-block;
+    position: absolute;
+    top: 30%; 
+    a {
+      font-size: 1.563em;
+    }
+  }
+  .views-field-nothing {
+    span {
+      display: block;
+      float: right;
+      width: 100%;
+    }
+    a.logout {
+      display: block;
+      float: right;
+      &::before {
+        content: url(../images/btn-goutte1-XS.png);
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 10px;
+      }
+      &:hover {
+        color: $light-blue;
+        &::before {
+          content: url(../images/btn-goutte1-hover-blanc-XS.png);
+        }
+      }
+    }
+  }
+  a{
+    color: #fff;
+    font-family: 'titillium_websemiBold', sans-serif;
+    font-size: 1.25em;
+  }
+  div.views-field {
+    text-align: right;
+  }
+}
+/* /HEADER */
+/* NAV + RECHERCHE  */
+.tab-nav .navbar-nav {
+    > li > a {
+      font-size: 1.750em;
+      margin-top: 14px;
+      padding: 10px 10px 5px 10px;
+      @media (max-width: 767px) {
+        font-size: 1em;
+      }
+      &:hover {
+        color: $cgd8-blue;
+        @media (max-width: 1190px) and (min-width: 768px) {
+        color: $light-blue;
+        }
+      }
+    }
+    li {
+      &::last-child a {
+        padding-right: 0;
+      }
+      &.active > a {
+        background-color: $light-blue;
+        color: $color-white;
+        &:hover {
+          background-color: $light-blue;
+          cursor: default;
+        }
+      }
+      a.dropdown-toggle {
+        padding-right: 5px;
+        &:hover {
+          color: $cgd8-blue;
+          @media (max-width: 1190px) and (min-width: 768px) {
+          color: $light-blue;
+          }
+        }
+        .circle {
+          @include circle-white;
+          margin-top: 10px;
+          margin-left: 10px;
+          float: right;
+        }
+      }
+    .dropdown-menu {
+      &:hover {
+        background-color: transparent;
+        height: 35px;
+      }
+      li.active a {
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.navbar-default .navbar-nav > .open > a {
+  background-color: transparent;
+  color: $light-blue;
+  &:focus {
+    background-color: transparent;
+    color: $light-blue;
+  }
+}
+
+.header-cgd8, header {
+  padding: 0;
+  margin-bottom: 10px;
+  @media (max-width: 768px) {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .navbar-header {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    @media (max-width: 768px) {
+      border-bottom: 0;
+    }
+  }
+  .nav-header,
+  .navbar-collapse {
+    padding: 0;
+    height: 50px !important;
+    background-color: rgba(6, 120, 190, 0.5);
+    @media (max-width: 768px) {
+      padding-right: 15px;
+      padding-left: 15px;
+      background-color: $cgd8-blue; 
+      height: 130px;
+    }
+    &:hover {
+      background-color: $color-white;
+      /*border: 1px solid $light-blue;*/
+      display: block;
+      @include nav-effettransition;
+    }
+    .navigation-collapsible {
+      &:hover {
+      background-color: rgba(40, 168, 224, 0.7);
+      display: block;
+      /*border: 1px solid $light-blue;*/
+      @include nav-effettransition;
+      @media (max-width: 1190px) and (min-width: 768px) {
+        background-color: $cgd8-blue;
+      }
+      }
+    }
+    .main-nav-header {
+      @media (max-width: 1190px) and (min-width: 768px) {
+        height: 48px;
+        &:hover {
+          /*background-color: rgba(40, 168, 224,1);*/
+          height: 50px;
+          }
+      }
+      @media (max-width: 767px) {
+        padding-left: 0;
+      }
+      ul.navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        float: none;
+        padding: 0;
+        @media (max-width: 767px) {
+          margin: 0;
+        li > a {
+          margin: 0;
+          }
+        }
+        @media (max-width: 420px) {
+        li > a {
+          padding: 10px 5px;
+          }
+        }
+      }
+    }
+    .search-block-form {
+      @media (max-width: 1190px) and (min-width: 768px) {
+        margin-top: 10px;
+      }
+      @media (max-width: 767px) {
+        width: 80%;
+        top: -50px;
+        right: 0;
+      }
+    }
+  }
+  .main-nav-header {
+    float: right;
+    @media (max-width: 768px) {
+      /*margin-top: 50px;*/
+      width: 100%;
+    }
+  }
+  .form-search {
+    background-color: transparent;
+    @include border-radius-0; 
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    border: none;
+  }
+  .form-group {
+    padding: 0;
+    margin: 0;
+  }
+  .input-group {
+    border-bottom: 1px solid white;
+    @media (max-width: 1198px) and (min-width: 768px) {
+      border-top: 1px solid white;
+      margin-top: 22px;
+    }
+    .form-search-header {
+      color: $color-white !important;
+      font-family: 'titillium_websemiBold', sans-serif;
+      padding-left: 5px;
+      border: none;
+    }
+  }
+  button {
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    border: 0;
+    font-size: 20px;
+    &:hover {
+      color: $light-blue;
+      background-color: transparent;
+    }
+  }
+  .dropdown-menu {
+    top: -45px;
+    border: none;
+    box-shadow: none;
+    left: -640px;
+    z-index: 1000;
+    background-color: transparent;
+    height: 40px;
+    padding-bottom: 0;
+    @media (max-width: 1190px) and (min-width: 768px) {
+      top: 45px;
+      padding-top: 0;
+      left: -538px;
+    }
+    @media (max-width: 767px) {
+      left: 350px;
+    }
+    &:hover {
+      background-color: $cgd8-blue;
+    }
+    li {
+      display: table-cell;
+      a {
+        display: inline-block;
+        @include tab-ss-nav;
+        opacity: 1;
+        @media (max-width: 1190px) and (min-width: 768px) {
+          font-size: 1.4em;
+        }
+        @media (max-width: 767px) {
+          font-size: 0.9em;
+        }
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+  .navigation-collapsible {
+      position: relative;
+      .search-block-form {
+        @media (max-width: 768px) {
+          position: absolute;
+        }
+      }
+    }
+  .navbar-toggle {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    margin-bottom: 0;
+    &:hover {
+      background-color: transparent;
+    }
+    .icon-bar:hover {
+      color: $light-blue;
+      width: 4px;
+    }
+  }
+  .navbar-collapse {
+    border: none;
+    @include filtre-boxshadow0;
+  }
+}
+/* /NAV + RECHERHCE  */
+
+
+/* MAIN */
+.main-container{
+  background-color: #fff;
+  padding: 20px 0;
+  color: #2c3e50;
+}
+.section-filet,
+.news-d8 {
+  border-bottom: 1px solid #cdd0d6;
+  padding-bottom: 30px;
+}
+  /* FILTRE ACTUS / EVENEMENTS */
+.section-rubric {
+  h1.page-header {
+    padding: 0 10px 0 30px;
+  }
+  .views-exposed-form, 
+  .views-exposed-form.bef-exposed-form {
+    padding: 0;
+    background-color: $light-blue;
+    .form-control {
+      @include border-radius-0;
+      border: 8px solid $light-blue;
+      border-left: 0;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: $color-white;
+      font-family: 'titillium_websemiBold', sans-serif;
+      padding: 0 5px 0 10px;
+      @include filtre-boxshadow;
+    }
+    .input-group-addon {
+      @include border-radius-0;
+      border: 0;
+      background-color: transparent;
+      .glyphicon {
+        color: $cgd8-blue !important;
+      }
+    }
+    .js-form-item {
+      margin: 0 0 0 27%;
+      @media (max-width:1200px) {
+        margin-left: 30px;
+      }
+      @media (max-width:990px) {
+        margin-top: 15px;
+      }
+    }
+    .form-actions {
+      float: right;
+    }
+  }
+  .select-wrapper {
+    width: 220px;
+    select {
+      width: 225px;
+      option {
+        background-color: $light-blue;
+        color: $color-white;
+        padding-left: 10px;
+        border: 1px solid $light-blue;
+        box-shadow: none;
+        &:hover {
+          background-color: $cgd8-blue;
+        }
+      }
+      option[selected=selected] {
+        background-color: $cgd8-blue;
+      }
+    }
+  &::after {
+    color: white;
+    margin-top: -.4em;
+    }
+  }
+  .views-field-title a,
+  .news-d8 h2 .quickedit-field,
+  .title-article {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: $cgd8-blue;
+    font-family: 'titillium_websemiBold', sans-serif;
+    text-decoration: none;
+    margin: 20px 0;
+    vertical-align: text-top;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+  .views-field-field-body {
+    font-size: 20px;
+    color: $cgd8-blue;
+    max-height: 120px;
+    overflow: hidden;
+    &::after {
+      content: '(...)';
+      position: absolute;
+      top: 145px;
+      right: 70px;
+      background-color: white;
+      padding-left: 18px;
+    }
+  }
+  .form-group {
+    padding-bottom: 0;
+  }
+  /* article des rubriques */
+  .container-article {
+    padding: 50px 30px 20px;
+    .container-infos h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+  }
+  .img-responsive {
+    width: 100%;
+    @media (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+  }
+  .description_news p{
+    font-size: 20px;
+    color: $cgd8-blue;
+    &::after {
+      content: '...';
+      text-align: right;
+    }
+  }
+  .tags_news {
+    padding-top: 15px;
+    .field--item {
+      display: inline-block;
+      float: left;
+      background-color: $cgd8-blue;
+      padding: 0 20px;
+      color: $color-white;
+      font-size: 17px;
+      margin-right: 20px;
+      border: 1px solid #a39b9b;
+      @include border-radius-5;
+      a {
+        color: $color-white;
+      }
+      &::before {
+        content: '#';
+      }
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+  }
+  .date_news {
+    float: right;
+    time {
+      background-color: $cgd8-blue;
+      padding: 5px;
+      color: $color-white;
+      font-size: 22px;
+      @include border-radius-5;
+      height: 100px;
+      width: 50px;
+      display: block;
+      text-align: center;
+      border: 1px solid #a39b9b;
+    }
+  }
+}
+/* /MAIN */
+
+/* FOOTER */
+footer.footer {
+  margin-top: 10px;
+  }
+  .container ul li a {
+   &:hover{
+      color: $light-blue;
+      background-color: transparent;
+   }
+}
+.footer-text{
+  font-size:1.563em;
+  padding:10px 0 0;
+  text-align:center;
+  color: white;
+}
+.menu--footer {
+  padding:10px 0 0;
+  text-align:right;
+  a {
+    font-size: 1.563em;
+    padding: 0 !important;
+    color: white;
+  }
+}
+
+/*#search-block-form{
+  margin: 0;
+  padding: 0;
+}*/
+
+
+/* user header */
+/* changement spécial GIT */
+#block-views-block-user-account-menu-custom{
+	a{
+	   color: #fff;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+  div.views-field.views-field-nothing{
+  	text-align: right;
+  }
+}
+/* /FOOTER */

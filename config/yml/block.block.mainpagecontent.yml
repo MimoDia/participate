@@ -1,0 +1,20 @@
+uuid: 88d8aa43-9be6-4a35-995f-a9600ebfbce7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_child
+id: mainpagecontent
+theme: bootstrap_child
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

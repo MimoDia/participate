@@ -1,0 +1,75 @@
+@import "default-variables";
+
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .expert .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8  .view-content .expert .views-field-view-user .field-content a{
+	background: #f24942;
+	color: $cgd8-blue;
+	display: block;
+	padding: $padding_text_theme;
+
+		&:hover{
+			color: $color-white;
+			text-decoration: none;
+			text-shadow: $shadow_text_theme;
+		}
+}
+
+
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .webmaster .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8  .view-content .webmaster .views-field-view-user .field-content a{
+	background: #ede72d;
+	color: $cgd8-blue;
+	display: block;
+	padding: $padding_text_theme;
+
+		&:hover{
+			color: $color-white;
+			text-decoration: none;
+			text-shadow: $shadow_text_theme;
+		}
+}
+
+
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .themer .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8  .view-content .themer .views-field-view-user .field-content a{
+	background: #7cbd49;
+	color: $cgd8-blue;
+	display: block;
+	padding: $padding_text_theme;
+
+		&:hover{
+			color: $color-white;
+			text-decoration: none;
+			text-shadow: $shadow_text_theme;
+		}
+}
+
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .developpement .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8  .view-content .developpement .views-field-view-user .field-content a{
+	background: #2ba4ed;
+	color: $cgd8-blue;
+	display: block;
+	padding: $padding_text_theme;
+
+		&:hover{
+			color: $color-white;
+			text-decoration: none;
+			text-shadow: $shadow_text_theme;
+		}
+}
+
+.views-field-field-score-nid,
+.views-field-field-score-result,
+.views-field-created{
+  display:flex;
+  padding: $padding_text_theme;
+  text-indent:0.5em;
+  
+}
+
+
+
+
+
+
+

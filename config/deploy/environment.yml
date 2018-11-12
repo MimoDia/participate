@@ -1,0 +1,21 @@
+development:
+  HTTP_HOST: www.codingame.loc
+  SERVER_ADDR: 192.168.56.66
+  MYSQL_NAME: codingame
+  MYSQL_USER: root
+  MYSQL_PASSWORD: root
+  MYSQL_HOST: localhost:8888
+integration:
+  HTTP_HOST: www.codingame.int
+  SERVER_ADDR: 10.32.0.174
+  MYSQL_NAME: codingame
+  MYSQL_USER: root
+  MYSQL_PASSWORD: root
+  MYSQL_HOST: localhost:8888
+recette:
+  HTTP_HOST: www.codingame.rec
+  SERVER_ADDR: 10.32.0.174
+  MYSQL_NAME: codingame
+  MYSQL_USER: root
+  MYSQL_PASSWORD: root
+  MYSQL_HOST: localhost:8888

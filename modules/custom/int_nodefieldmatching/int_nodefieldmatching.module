@@ -1,0 +1,125 @@
+<?php
+
+use Drupal\Node\NodeInterface;
+use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity;
+
+
+function int_nodefieldmatching_page_attachments(array &$page){
+	$page['#attached']['library'][]= 'int_nodefieldmatching/int_nodefieldmatching';
+}
+
+
+/**
+ * Implements hook_preprocess_node().
+ **/
+
+function int_nodefieldmatching_preprocess_node(&$variables){
+
+	if($variables['node']->getType()=="demande_de_formation"){
+
+		//  Recupere l'id du champ organisme de formation, puis le nom associé a l'id de ce node.
+		// ou ->getValue()[0]['target_id'].
+		$id_organismeChoisi = $variables['node']->get('field_or')->getValue('list')[0]['target_id'];
+		
+		// Affiche le motif de la formation de la formation
+		$id_motif_de_la_demande_de_formation_taxo_term= $variables['node']->get('field_mo')->getValue('list')[0]['target_id'];
+		$motifDeLaDemandeDeFormation= \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($id_motif_de_la_demande_de_formation_taxo_term)->name->value;
+
+
+		// Affiche le titre de la formation 
+		$title_organismeChoisi= \Drupal::entityTypeManager()->getStorage('node')->load($id_organismeChoisi)->getTitle();  
+
+		// Recupere la durée de la formation.
+		$duree_formation = $variables['node']->get('field_duree')->getValue('list')[0]['value'];
+
+		// Recupere le nbre de jours ou d'heures de formation.
+		// ou ->getValue('list')[0]['value'].
+		// $unite_de_temps_jour_ou_heure = $variables['node']->get('field_unites_de_temps')->getValue()[0]['value'];
+ 
+		// Recupere le motif de la formation.
+		$id_unite_de_temps_jour_ou_heure_taxo_term= $variables['node']->get('field_mo')->getValue('list')[0]['target_id'];
+		$unite_de_temps_jour_ou_heure= \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($id_unite_de_temps_jour_ou_heure_taxo_term)->name->value; 
+
+		// recupere la date de formation de formation (en tamestamp).
+		 $date_choisie_demande_debut_brut= $variables['node']->get('field_date_formation')->getValue('list')[0]['value'];
+		 $date_choisie_demande_debut_net= str_replace("T", " " , $date_choisie_demande_debut_brut);
+		
+		 $date_choisie_demande_fin_brut= $variables['node']->get('field_date_formation')->getValue('list')[0]['end_value'];
+		 $date_choisie_demande_fin_net= str_replace("T", " " , $date_choisie_demande_fin_brut);
+
+
+	}
+
+  if($variables['node']->getType()=='bilan_de_formation'){ 
+		
+		// On recupere d'abord l'id du TDC en reference puis je recupere la valeur de chaque champs.
+
+		// 1- Recuperer l'id du TDC 'Demande de formation' qui est une entity
+		// eference dans le TDC "Bilan de formation" pour ensuite recuperer 
+		// les valeurs associée aux champs. COOL
+		$id_demande_formation = $variables['node']->get('field_demand_referenciee_dans_bi')->getValue()[0]['target_id'];
+		
+
+		// 2. Recuepration des valeur de chaque champs.
+		// Recupere le nom de l'agence au quel appartient un collaborateur. COOL
+		$nomAgence= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_agence')->getValue()[0]['value'];
+
+		// Recupere le prenom et le nom  du collaborateur. COOL
+		$prenomEtNomCollaborateur= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_collaborateur')->getValue()[0]['value'];
+
+		// Recupere le titre de la formation que fait le collaborateur. COOL
+		$titreDemandeFormation= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->getTitle();
+
+		// recupere l'id de l'organisme chosi (contenu refeferaçant le TDC "Organisme"). OU load($id_demande_formation)->get('field_or')->getString();
+		$id_organismeChoisi_referenceEntityTDCorganisme= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_or')->getValue('list')[0]['target_id'];// 
+
+		// J'ai recuperé l'id, de l'organisme choisi du TDC "Organisme".
+		// je recupere maintenant la valeur du nom associée à cette id.
+		//QQQQ $organismeChoisi= \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($id_organismeChoisi)->getTitle();
+		$organismeChoisi= \Drupal::entityTypeManager()->getStorage('node')->load($id_organismeChoisi_referenceEntityTDCorganisme)->getTitle();// ;->name->value;
+
+	  // kint($organismeChoisi);exit;
+
+		// Recupere l'id terme de taxo de la demande de formation du TDC
+	    // 'Demande de formation' (qui lui est une entity reference dans le TDC s
+		// "Bilan de formation") et je load la valeur associée à l'id.
+		// OUbien: $id_motifFormation_taxo_term= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_mo')->getString();
+		$id_motifFormation_taxo_term= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_mo')->getValue('list')[0]['target_id'];
+		// J'ai recuperé l'id, du terme de taxonomie, je recupere maintenant la 
+		// Valeur du nom du terme associée à l'id.
+		$nomDuMotifDelaDemande= \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($id_motifFormation_taxo_term)->name->value;
+	
+		// Recuperer la duree (numerique) de la formation. COOL
+		$dureeFormation= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_duree')->getValue('list')[0]['value'];
+
+		// Recuperer la duree de la formation.
+		 // OUbien: $id_unitesDetemps_taxo_term=\Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_unites_de_temps')->getValue('list')[0]['target_id'];
+		 $id_unitesDetemps_taxo_term=\Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_unites_de_temps')->getstring();
+		$dureeFormationEnJourOuenHeure= \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($id_unitesDetemps_taxo_term)->name->value;
+
+		// Recuperer la date de la formation.
+		$dateDebutDeFormationChoisie_debut_brute= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_date_formation')->getValue('list')[0]['value'];
+		$dateDeLaFormationChoisie_debut_net= str_replace("T", " ", $dateDebutDeFormationChoisie_debut_brute);
+
+		$dateDebutDeFormationChoisie_fin_brute= \Drupal::entityTypeManager()->getStorage('node')->load($id_demande_formation)->get('field_date_formation')->getValue('list')[0]['end_value'];
+		$dateDeLaFormationChoisie_fin_net= str_replace("T", " ", $dateDebutDeFormationChoisie_fin_brute);
+
+		   // Passons ces variables à notre template de twig associé
+			$variables['recupere_moi_le_nom_de_lAgence_via_twig'] = $nomAgence;
+
+			$variables['recupere_moi_le_prenom_et_le_nom_du_collaborateur_via_twig']= $prenomEtNomCollaborateur;
+
+			$variables['recupere_moi_le_titre_de_la_formation_via_twig'] = $titreDemandeFormation;
+			$variables['recupere_moi_le_motif_de_la_demande_via_twig'] = $nomDuMotifDelaDemande;
+
+			$variables['recupere_moi_la_date_de_debut_de_la_formation_choisie_via_twig'] = $dateDeLaFormationChoisie_debut_net;
+			$variables['recupere_moi_la_date_de_fin_de_la_formation_choisie_via_twig'] = $dateDeLaFormationChoisie_fin_net;
+
+			$variables['recupere_moi_la_duree_de_la_demande_via_twig'] = $dureeFormation;
+			$variables['recupere_moi_la_duree_en_jour_ou_en_heure_de_la_demande_via_twig'] = $dureeFormationEnJourOuenHeure;
+			$variables['recupere_moi_lorganisme_choisi_via_twig'] = $organismeChoisi;
+
+		}
+}
+

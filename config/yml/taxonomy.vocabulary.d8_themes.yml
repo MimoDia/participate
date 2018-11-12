@@ -1,0 +1,11 @@
+uuid: 1a3367b0-5176-4e5d-8298-83eedb48796e
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4BeU91SAIYR_103mPiyCXnbJ2qnSODlqb8nS0WeN13I
+name: Thème
+vid: d8_themes
+description: 'Utilisez le thème pour regrouper les tests/certifications par thème.'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,120 @@
+//////////////////////////////////////////////////
+//                                              //
+//            Dossier de compétences            //
+//               User Account Page              //
+//                     START                    //
+//                                              //
+//////////////////////////////////////////////////
+/*Default variables.*/
+@import "default-variables";
+
+ /*Base-theme overrides.*/
+@import 'overrides';
+
+//mixins
+@import 'mixins';
+
+//sprite
+@import 'icons';
+
+.label{
+  color:black!important;
+}
+
+#block-views-block-view-block-competencies-file-block-1{
+  .views-row{
+    display: flex;
+    padding:5px 5px 0px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    .views-field{
+    }
+    .views-field-view-node{
+      flex:2.5;
+      a{
+        font-size:18px;
+      }
+    }
+    .views-field-edit-node{
+      flex:1;
+      text-align: right;
+      a{
+        visibility: hidden;
+        &:after{
+          visibility: visible;
+          background-image: url('../images/edit_pencil.png');
+          background-size: 24px 24px;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          content:"";
+        }
+        &:hover{
+          &:after{
+            background-image: url('../images/edit_pencil_hover.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//////////////////////////////////////////////////
+//                                              //
+//            Dossier de compétences            //
+//               User Account Page              //
+//                      END                     //
+//                                              //
+//////////////////////////////////////////////////
+
+/* PAGE PROFIL USER */
+.section-user {
+  h1.page-header {
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-family: 'Titillium_websemiBold', sans-serif;
+  }
+  article {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1px solid #cdd0d6;
+    .field {
+    padding-top: 20px;
+    &.field--name-user-picture {
+      background: url(../images/icons-se2d4a77255.png) no-repeat;
+      background-position: -120px -415px;
+      height: 85px;
+      width: 74px;
+      display: inline-block;
+      margin-right: 20px;
+      padding-top: 0;
+      a {
+        position: relative;
+        display: block;
+        .img-responsive {
+          @include border-radius-50;
+          width: 64px;
+          height: 60px;
+          margin: 0;
+          position: absolute;
+          top: 22px;
+          left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .region-content section {
+    padding: 20px 30px;
+    border-bottom: 1px solid #cdd0d6;
+    h2.block-title {
+      font-size: 25px;
+      font-family: 'Titillium_websemiBold', sans-serif;
+      text-transform: uppercase;
+      color: $drupal-blue;
+    }
+  }
+}

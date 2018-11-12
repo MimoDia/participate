@@ -1,0 +1,13 @@
+uuid: a37cec02-5a0e-4c32-81b2-74cf6ac2ad95
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: io6zNK1c33sMAL85atCaDLvJ6vESwgfOHNvo-cCVGpI
+id: drupalien
+label: Drupalien
+weight: -7
+is_admin: null
+permissions:
+  - 'change own username'
+  - 'edit own competencies_file content'

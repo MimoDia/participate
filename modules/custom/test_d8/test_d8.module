@@ -1,0 +1,101 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\views\ViewExecutable;
+use Drupal\user\Entity\User;
+
+
+function test_d8_help($route_name, RouteMatchInterface $route_match){
+  switch ($route_name) {
+    case 'help.page.test_d8':
+      $output = '<h3>'.t('About').'</h3>';
+      $output .= '<p>'.t('Please send help').'</p>';
+
+      return $output;
+  }
+}
+
+
+# Send settings to JS.
+function test_d8_preprocess_html(&$variables){
+  $settings = \Drupal::config('test_d8.settings');
+  $variables['#attached']['drupalSettings']['TestD8']['time_to_complete_test'] = $settings->get('time_to_complete_test');
+  $variables['#attached']['drupalSettings']['TestD8']['number_of_questions'] = $settings->get('number_of_questions');
+}
+
+
+function test_d8_form_alter(&$form, FormStateInterface $form_state, $form_id){
+  # Activate ckeditor in views.
+  if ($form_id == 'views_ui_config_item_form' && !empty($form['options']['content'])) {
+    $form['options']['content']['#editor'] = TRUE;
+  }
+}
+
+
+function test_d8_node_presave(EntityInterface $entity) {
+  # Check if content type is a score.
+  if ('score' == $entity->getType()) {
+
+    # Second Way (Much faster).
+    $themeName = $entity->get('field_score_nid')
+                  ->referencedEntities()[0]
+                  ->get('field_theme')
+                  ->referencedEntities()[0]
+                  ->getName();
+    // echo $mt - microtime();
+
+    $scoreUser = User::load($entity->getOwnerId());
+
+    # Set new title.
+    $scoreTitle  = 'Test ' . $themeName;
+    $scoreTitle .= ' - ' . $scoreUser->get('field_prenom')->getString();
+    $scoreTitle .= ' ' . $scoreUser->get('field_nom')->getString();
+    $scoreTitle .= ' - ' . format_date($entity->getCreatedTime(), 'format_date_classique');
+    $scoreTitle .= ' - Score : ' . $entity->get('field_score_result')->getString() . ' %';
+
+    $entity->setTitle($scoreTitle);
+  }
+}
+
+
+function test_d8_views_pre_render(ViewExecutable $view) {
+  # On views "classement"...
+  $views = [
+    'classement__2_roles__date_passage__testd8',
+    'classement__2_roles__meilleurs_resultats__testd8',
+    'classement__2_roles__moyenne__testd8',
+    'classement__2_roles__theme__testd8',
+    'classement__2_roles__certif',
+  ];
+  if (in_array($view->current_display, $views)) {
+    $userRoles = \Drupal::currentUser()->getRoles();
+    # ...hide prenom and nom fields for the "drupalien" role.
+    if (in_array('drupalien', $userRoles)) {
+      $view->field['view_user']->options['exclude'] = true;
+    }
+    # ...hide photo and pseudo fields for the "manager" role.
+    elseif (in_array('manager', $userRoles)) {
+      $view->field['user_picture']->options['exclude'] = true;
+      $view->field['uid']->options['exclude'] = true;
+    }
+  }
+}
+
+
+function test_d8_block_access(\Drupal\block\Entity\Block $block, $operation, \Drupal\Core\Session\AccountInterface $account) {
+  # Remove Test Scores from manager's profile.
+  if ('views_block:tests_drupal_8-userpage__two_roles__list_score_test' == $block->getPluginId()){
+    
+    $parts = explode('/', \Drupal::request()->getpathInfo());
+    $path = array_key_exists(1, $parts) ? $parts[1] : null;
+    $uid = array_key_exists(2, $parts) ? $parts[2] : null;
+    $user = $uid ? User::load($uid) : null;
+    $roles = $user ? $user->getRoles() : array();
+    if (('user' == $path) && in_array('manager', $roles)){
+      $block->disable();
+    }
+  }
+}
+

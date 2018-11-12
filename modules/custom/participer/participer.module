@@ -1,0 +1,217 @@
+<?php 
+
+// Chemin qui nous ramene vers le contrilleur de base.
+use Drupal\Core\Entity\EntityManager;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+ use  Drupal\Core\Messenger\MessengerInterface;
+// use  Drupal\Core\Messenger;
+use Drupal\Core\Messenger\Messenger;
+
+// Pour pouvoir utiliser un bloc.
+use Drupal\block\Entity\Block; 
+
+// Pour les nodes interface.
+use Drupal\node\NodeInterface; 
+
+// Pour les terme de taxo.
+use Drupal\taxonomy\Entity\Term; 
+use Drupal\taxonomy\Entity;
+
+// Pour pouvoir utiliser l'entite User.
+use Drupal\user\Entity\User;
+
+// Pour les nodes.
+use Drupal\node\Entity\Node; 
+
+// Pour la redirection apres une deconnexion de lutilisateur.
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/***
+implemente hook_user_login
+*/
+function participer_user_login($account){
+
+// drupal_set_message(t('Bienvenu(e) %name !' , array('%name' => $account->getAccountName() ) ) );
+
+	$message= 'Bienvenu(e) ' .$account->getAccountName();
+	$messenger= \Drupal::service('messenger');
+	$messenger->addMessage($message, 'status');
+
+}
+
+
+function participercachedestructeur_user_logout($account){
+	\Drupal::service('cache_tags.invalidator')->invalidateTags(['ma_session']);
+}
+
+function participercachedestructeur_user_login($account){
+	\Drupal::service('cache_tags.invalidator')->invalidateTags(['ma_session']);
+}
+
+
+	 function participer_page_attachments(array &$page){
+		 $page['#attached']['library'][]= 'participer/participer'; 
+	}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+
+	function participer_preprocess_node(&$variables) {
+
+		$node = \Drupal::routeMatch()->getParameter('node');
+
+			// Si le TDC est est 'evenement', recuperons la date de cet evenement.
+		if ($node instanceof \Drupal\node\NodeInterface && $variables['node']->getType()=='evenement')  {
+		      // Oubien $dateDuchamps = $node->get('field_date')->getValue()[0] ; .
+			$dateDuchamps= $node->field_date->value;
+		      
+		}
+
+	    if($variables['node']->getType()=='evenement'){
+		    
+		    //##################################################################### 
+		    ////#### Obtenir les infos ou donnees du node (NODE_ENTITY) ###########
+	    	##################################################################### 
+				$titre = $variables['node']->getTitle();
+				
+				 // Résultat de la ligne suivante affiche "2019-01-10T12:20:10" => donne  "2019-01-10 12:20:10".
+				 $date= str_replace('T', ' ', $variables['node']->get('field_date')->getString()); 
+				 
+
+
+				$adresseCarte= $variables['node']->field_adresse->getString();
+
+				$lieu= $variables['node']->get('field_lieu')->getString();
+
+				$description= $variables['node']->get('field_description')->getString();
+
+
+				$photo = '';
+
+				// S'il existe une photo de l'utilisateur, on la recupere.
+				if (property_exists($variables['node']->get('field_photo_s_'), 'entity')){
+					$photo = $variables['node']->get('field_photo_s_')->entity->uri->value;
+				}
+			//##################################################################### 
+			// ####### Obtenir la photo de l'utilisateur (USER_ENTITY) ###########
+			//##################################################################### 
+
+				$authorId= $variables['node']->get('revision_uid')->getString();
+
+				$authorinfo = \Drupal::entityTypeManager()->getStorage('user')->load($authorId)->get('user_picture');
+				$authorImageinfo = '';
+				if ($authorinfo->getValue('list')){
+					$authorImageinfo = $authorinfo->getValue('list')[0]; 
+				}
+
+			//##################################################################### 
+			// ####### Obtenir les informations de l'utilisateur (USER_ENTITY) ########
+			//##################################################################### 
+
+				// Recuper l'id du user (organisateurs de l'evenement).
+				 $idUser= $variables['node']->get('field_organisateurs')->getString();
+				$idUserArray = explode(', ', $idUser);
+
+				$UserInfosData = \Drupal::entityTypeManager()->getStorage('user')->loadMultiple($idUserArray);
+
+				 
+				$organisateurs = [];
+
+				foreach($UserInfosData as $key=>$user){
+
+					// $organisateurs[$key]['name']= $user->name->value;
+					$organisateurs[$key]['email']= $user->mail->value; 
+					$organisateurs[$key]['field_prenom']= $user->field_prenom->value; 
+					$organisateurs[$key]['field_nom']= $user->field_nom->value;
+
+					$organisateurs[$key]['user_picture'] = '';
+
+					// Si la class user est presente dans la propiete entity, recupere moi la valeur.
+					if (property_exists($user->user_picture, 'entity')){
+						$organisateurs[$key]['user_picture'] = $user->user_picture->entity->uri->value;
+					}
+				}
+
+			//##################################################################### 
+			// ####### Obtenir les termes de taxonomie associée au node.######## 
+			//##################################################################### 
+
+				 // Afficher l'id du champs de la taxonomie (field_dans_la_meme_rubrique).
+				 // Affiche "15, 11" qui est en string. Il faut le convertit en array.
+				 $idTermesTaxoForTagEventInStrings = $variables['node']->get('field_dans_la_meme_rubrique')->getString(); 
+				 $idTermesTaxoForTagEvent = explode(',', $idTermesTaxoForTagEventInStrings); // convertir en array
+
+				 $tagsEvenement=  \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadMultiple($idTermesTaxoForTagEvent); 
+					
+				$tagTermesEvenement= [];
+
+				foreach($tagsEvenement as $keys => $tags){
+					$tagTermesEvenement[$keys]= $tags->name->value;
+				}
+
+			//##################################################################### 
+			// #### Passons ces variables à notre template de twig associé. ###########
+			//##################################################################### 
+				 // $variables['recupere_ma_date_via_twig'] = $date;
+				 $variables['recupere_mon_titre_via_twig'] = $titre;
+				 
+				 $variables['recupere_mon_lieu_via_twig'] = $lieu;
+				 $variables['recupere_mon_adress_carte_via_twig'] = $adresseCarte;
+				 $variables['recupere_ma_description_via_twig'] = $description;
+				 $variables['recupere_info_user_via_twig'] = $organisateurs;
+
+				 $variables['recupere_ma_photo_via_twig'] = $photo;
+				 $variables['recupere_mes_tags_via_twig'] = $tagTermesEvenement;
+
+		}
+
+		
+	} 
+
+
+/**
+ * Implements hook_block_access().
+ */
+	function participer_preprocess_block(&$variables) {
+
+		  // Affiche tous les les bloc du site et leur id sur la page front.
+		  $id = $variables['elements']['#plugin_id'];
+
+		  // Affiche la liste des regions contenant les blocks
+		  // $regions= Block::load($id)->getRegion();
+		 
+
+		  if($id == "participate_event_block") {
+		  	
+		  	$variables['#cache']['max-age'] = 0;
+
+		    $node = \Drupal::routeMatch()->getParameter('node'); 
+		    
+		    $variables['#cache']['max-age'] = 0;
+
+		    if($node instanceof \Drupal\node\NodeInterface) {
+		      $dateDuchamps = $node->get('field_date')->getValue()[0] ;
+
+		      // Si la date est inferiere à la date du jour, je supprime le contenu.   
+		      if(strtotime($dateDuchamps['value']) < time()){
+			 		unset($variables['content']); 
+		      }
+		    }
+		  }
+	} 
+
+
+function participer_preprocess_comment(&$variables) {
+
+	  /** @var \Drupal\comment\CommentInterface $comment */
+	  $comment = $variables['elements']['#comment']->get('comment_body')->getValue('list')[0]['value'];
+	// Passons ces variables à notre template de twig associé
+			// $variables['recupere_mon_commentaire_via_twig'] = $comment;
+}
+
+
+
+

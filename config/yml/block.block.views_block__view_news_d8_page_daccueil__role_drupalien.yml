@@ -1,0 +1,30 @@
+uuid: bcc9801c-78a2-4b4f-b719-db53930ca420
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.view_news_d8
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_child
+id: views_block__view_news_d8_page_daccueil__role_drupalien
+theme: bootstrap_child
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:view_news_d8-page_daccueil__role_drupalien'
+settings:
+  id: 'views_block:view_news_d8-page_daccueil__role_drupalien'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

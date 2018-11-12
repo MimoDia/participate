@@ -1,0 +1,21 @@
+favicon:
+  mimetype: image/png
+  path: 'public://logo-D8-header_2.png'
+  url: 'http://localhost/themes/custom/bootstrap_child/favicon.ico'
+  use_default: 0
+schemas:
+  bootstrap: 8000
+  bootstrap_child: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: 'public://logo-D8-header_1.png'
+  url: ''
+  use_default: 0
+cdn_jsdelivr_theme: flatly
+table_responsive: '-1'
+table: ''
+langcode: fr

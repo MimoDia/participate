@@ -1,0 +1,13 @@
+uuid: 5246d94f-44b3-43d5-991d-734a082674b2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.score
+_core:
+  default_config_hash: qtzC11VRK8tLHhaENTC_0CvJ2yuSsDwW6KD83lHHKi4
+id: node.score
+target_entity_type_id: node
+target_bundle: score
+default_langcode: site_default
+language_alterable: false

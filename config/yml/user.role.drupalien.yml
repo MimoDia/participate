@@ -1,0 +1,17 @@
+uuid: 052eb558-3086-450e-b924-73498843eb03
+langcode: fr
+status: true
+dependencies: {  }
+id: drupalien
+label: drupalien
+weight: -7
+is_admin: null
+permissions:
+  - 'change own username'
+  - 'create certification_d8 content'
+  - 'delete own certification_d8 content'
+  - 'edit own certification_d8 content'
+  - 'edit own news_d8 content'
+  - 'mapermission access a la liste de tous les types de contenus evenement'
+  - 'use text format full_html'
+  - 'use text format restricted_html'

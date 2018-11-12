@@ -1,0 +1,25 @@
+uuid: 1ca70f5d-0176-4792-b2c7-638d2fecbc03
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_s_
+    - node.type.evenement
+  module:
+    - video_embed_field
+id: node.evenement.field_video_s_
+field_name: field_video_s_
+entity_type: node
+bundle: evenement
+label: Vidéo(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field

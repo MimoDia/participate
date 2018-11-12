@@ -1,0 +1,38 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+/* line 11, ../scss/2_certification_block.scss */
+/* line 14, ../scss/2_certification-block.scss */
+section[class*="block-views-blockcertification-block"] h2.block-title {
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  background-color: #2c3e50;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/*aligne les labels et attributes page classement*/
+/* line 26, ../scss/2_certification-block.scss */
+.views-label {
+  float: left;
+  padding-right: 5px;
+}
+
+/* line 32, ../scss/2_certification-block.scss */
+.file--mime-application-pdf {
+  width: 80%;
+}
+
+/* line 37, ../scss/2_certification-block.scss */
+.views-label-field-certificat {
+  margin-top: 5px;
+}

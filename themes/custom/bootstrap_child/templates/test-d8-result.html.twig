@@ -1,0 +1,9 @@
+<div class="test_d8-result test_d8-result-{{ test_score >= 70 ? 'success' : 'failure' }}">
+  <p>Score&nbsp;: {{ test_score }}&nbsp;%</p>
+  <p>{{
+    test_score >= 70 ?
+    'Votre test est validé car vous avez obtenu plus de 70&nbsp;% de bonnes réponses.' :
+    'Votre test ne peut être validé car il faut obtenir au moins 70&nbsp;% de bonnes réponses.'
+  }}</p>
+</div>
+

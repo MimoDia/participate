@@ -1,0 +1,27 @@
+uuid: e187a6d4-016f-4382-b373-c54a728b52ba
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dans_la_meme_rubrique
+    - node.type.evenement
+id: node.evenement.field_dans_la_meme_rubrique
+field_name: field_dans_la_meme_rubrique
+entity_type: node
+bundle: evenement
+label: 'Dans la même rubrique'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,69 @@
+/*Default variables.*/
+@import "default-variables";
+
+ /*Base-theme overrides.*/
+@import 'overrides';
+
+//mixins
+@import 'mixins';
+
+//sprite
+@import 'icons';
+
+/* PAGE TOUS LES EVENEMENTS */
+.section-events {
+	.table-striped > tbody > tr:nth-of-type(2n+1) {
+    	background-color: white;
+	}
+	.section-filet {
+		width: 100%;
+		td {
+			display: inline-block;
+			float: left;
+			&.views-field-field-photo-s- {
+				width: 25%;	
+				padding: 50px 15px 50px 30px;
+			}
+			&.views-field-title, 
+			&.views-field-field-description {
+				width: 55%;
+				padding: 50px 15px 10px 15px;
+			}
+			&.views-field-field-description {
+				padding-top: 0;
+				p {
+					font-size: 20px;
+				}
+			}
+			&.views-field-field-date {
+				width: 10%;
+				float: right;
+				padding: 0 30px 10px 15px;
+				time {
+			    background-color: #39425b;
+			    padding: 5px;
+			    color: white;
+			    font-size: 22px;
+			    @include border-radius-5;
+			    height: 100px;
+			    width: 50px;
+			    display: block;
+			    text-align: center;
+			    border: 1px solid #a39b9b;
+				}
+			}
+		}
+	}
+}
+.evenement .date--background{
+	background-color: #264d73;
+	color: white; 
+	
+}
+/* PAGE TOUS LES EVENEMENTS */
+.evenement .lieu--background{
+	background-color: #264d73;
+	color: white;
+	
+}
+

@@ -1,0 +1,109 @@
+uuid: 49bceab2-0772-4184-b896-2236bc29854b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_d8.comment
+    - field.field.node.news_d8.field_audio
+    - field.field.node.news_d8.field_body
+    - field.field.node.news_d8.field_date_news_d8
+    - field.field.node.news_d8.field_links_documents
+    - field.field.node.news_d8.field_picture
+    - field.field.node.news_d8.field_tags
+    - field.field.node.news_d8.field_video_embed
+    - field.field.node.news_d8.field_video_upload
+    - field.field.node.news_d8.field_video_upload_or_embed
+    - image.style.large
+    - node.type.news_d8
+  module:
+    - addtocalendar
+    - datetime
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: Kkhhql78eEcAIBNgJRtAZ2n15f7f85lZMwMrwlqvX30
+id: node.news_d8.teaser
+targetEntityType: node
+bundle: news_d8
+mode: teaser
+content:
+  field_body:
+    type: text_trimmed
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 120
+    third_party_settings: {  }
+  field_date_news_d8:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: format_date_news_d8
+    third_party_settings:
+      addtocalendar:
+        addtocalendar_settings:
+          style: blue
+          display_text: 'Add to Calendar'
+          atc_title:
+            field: token
+            tokenized: Title
+          atc_description:
+            field: token
+            tokenized: Description
+          atc_location:
+            field: token
+            tokenized: Location
+          atc_organizer:
+            field: token
+            tokenized: 'Coding Game D8'
+          atc_organizer_email:
+            field: token
+            tokenized: admin@admin
+          atc_date_end:
+            field: token
+            tokenized: ''
+          atc_privacy: public
+          data_secure: auto
+          data_calendars:
+            iCalendar: 0
+            'Google Calendar': 0
+            Outlook: 0
+            'Outlook Online': 0
+            'Yahoo! Calendar': 0
+        addtocalendar_show: 0
+  field_picture:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true
+  field_audio: true
+  field_links_documents: true
+  field_video_embed: true
+  field_video_upload: true
+  field_video_upload_or_embed: true
+  langcode: true

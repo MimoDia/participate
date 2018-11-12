@@ -1,0 +1,20 @@
+uuid: fe3586da-a1b7-4fd0-8860-f8aeb63a8d89
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bootstrap_child
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: bootstrap_child_page_title
+theme: bootstrap_child
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

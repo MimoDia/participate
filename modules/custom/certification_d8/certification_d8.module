@@ -1,0 +1,61 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\user\Entity\User;
+
+function certification_d8_form_alter(&$form, &$fotm_state, $form_id){
+
+		if (isset($form['sort_order'])) {
+			$form['sort_order']["#type"] = FALSE;
+		}
+
+	if (('node_certification_d8_form' == $form_id) || ('node_certification_d8_edit_form' == $form_id)){
+		// On cache le champ titre a l'utilisateur.
+		$form['title']['#access'] = FALSE;
+		// On limite la saisie du champ date à la date du jour.
+		$form['field_certif_date_passage']['#after_build'] = array('limit_max_date');
+		// On cache le selecteur ASC/DESC a l'utilisateur.
+	}
+}
+
+function certification_d8_node_presave(EntityInterface $entity) {	
+	// On vérifie qu'il s'agit de l'enregistrement d'un contenu de type certification.
+	if ('certification_d8' == $entity->getType()) {
+		// On récupère certaines informations du contenu afin de constituer un titre parlant.
+		$certifThemeId = $entity->get('field_certif_theme')->getString();
+		$certifUser = User::load($entity->getOwnerId());
+		$certifTime = strtotime($entity->get('field_certif_date_passage')->getString());
+
+		// On défini le nouveau titre.
+		$certifTitle  = 'Certification: '. Term::load($certifThemeId)->getName();
+		$certifTitle .= ' - '. $certifUser->get('field_prenom')->getString();
+		$certifTitle .= ' '. $certifUser->get('field_nom')->getString();
+		$certifTitle .= ' - '. format_date($certifTime, 'format_date_classique');
+		$certifTitle .= ' - Score: '. $entity->get('field_certif_result')->getString() .' %';
+		$entity->setTitle($certifTitle);
+	}
+}
+
+function limit_max_date($element){
+	 $element['widget']['0']['value']['date']['#attributes']['max'] = date('Y-m-d');
+	 return  $element;
+}
+
+function certification_d8_block_access(\Drupal\block\Entity\Block $block, $operation, \Drupal\Core\Session\AccountInterface $account) {
+
+
+  if ('views_block:certification_d8-userpage__two_roles__list_certification_by_user' == $block->getPluginId()){
+    $parts = explode('/', \Drupal::request()->getpathInfo());
+    $path = array_key_exists(1, $parts) ? $parts[1] : null;
+    $uid = array_key_exists(2, $parts) ? $parts[2] : null;
+    if ('user' == $path){
+      if ($user = User::load($uid)){
+      	$roles = $user->getRoles();
+      	if (in_array('manager', $roles)){
+      	  $block->disable();
+      	}
+      }
+    }
+  }
+}

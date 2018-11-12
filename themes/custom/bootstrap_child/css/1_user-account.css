@@ -1,0 +1,459 @@
+/*Default variables.*/
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+/* COLORS */
+/* FONTS */
+/* TITLE */
+/* NAVIGATION */
+/*Base-theme overrides.*/
+/**
+ * Mixins.
+ *
+ * 
+ *
+ */
+/*@mixin title-article {// style titre des articles
+	font-size: 1.750em;
+    text-transform: uppercase;
+    color: $cgd8-blue;
+    font-family: 'titillium_websemiBold', sans-serif;
+    text-decoration: none;
+}*/
+/* line 424, icons/*.png */
+.icons-sprite, .icons-arrow-down, .icons-arrow-left, .icons-arrow-right, .icons-arrow-up, .icons-btn-goutte1-hover-blanc, .icons-btn-goutte1-hover-bleu-fonce, .icons-btn-goutte1, .icons-btn-goutte2-hover-blanc, .icons-btn-goutte2, .icons-goutte-ajout-commentaire, .icons-goutte-audio, .icons-goutte-drupal-bg-profil, .icons-goutte-drupal-bg-user-dev-bleu, .icons-goutte-drupal-bg-user-expert-rouge, .icons-goutte-drupal-bg-user-themer-vert, .icons-goutte-drupal-bg-user-webm-jaune, .icons-goutte-participe-non-rouge, .icons-goutte-participe-oui-vert, .icons-goutte-participe-peut-etre-jaune, .icons-lecteur-photo-bleu, .icons-lecteur-video-bleu, .icons-logo-Ausy-blanc-rouge-sur-fd-bleu, .icons-logo-D8-header, .icons-logo-D8-hover-blanc, .icons-logo-ausy-blanc-rouge, .icons-loupe-blanche, .icons-loupe-bleue, .icons-lunettes-bleues-RTO, .icons-lunettes-dev-KO, .icons-lunettes-jaunes-RTO, .icons-lunettes-rouges-RTO, .icons-lunettes-test-dev-KO, .icons-lunettes-test-dev-OK, .icons-lunettes-test-expert-KO, .icons-lunettes-test-expert-OK, .icons-lunettes-test-themer-KO, .icons-lunettes-test-themer-OK, .icons-lunettes-test-webm-KO, .icons-lunettes-test-webm-OK, .icons-lunettes-vertes-RTO, .icons-picto-crayon-bleu, .icons-picto-pdf, .icons-picto-question {
+  background-image: url('/images/icons-se2d4a77255.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-down {
+  background-position: 0 -55px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-left {
+  background-position: -16px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-right {
+  background-position: -25px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-up {
+  background-position: -300px -110px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-blanc {
+  background-position: -132px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-bleu-fonce {
+  background-position: -88px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1 {
+  background-position: -294px -55px;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2-hover-blanc {
+  background-position: -44px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2 {
+  background-position: 0 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-ajout-commentaire {
+  background-position: -342px -415px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-audio {
+  background-position: 0 -502px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-profil {
+  background-position: -120px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-dev-bleu {
+  background-position: -194px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-expert-rouge {
+  background-position: -268px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-themer-vert {
+  background-position: 0 -245px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-webm-jaune {
+  background-position: 0 -330px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge {
+  background-position: -176px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge:hover, .icons-goutte-participe-non-rouge.goutte-participe-non-rouge-hover {
+  background-position: -368px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert {
+  background-position: -224px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert:hover, .icons-goutte-participe-oui-vert.goutte-participe-oui-vert-hover {
+  background-position: -338px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune {
+  background-position: -320px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune:hover, .icons-goutte-participe-peut-etre-jaune.goutte-participe-peut-etre-jaune-hover {
+  background-position: -272px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-photo-bleu {
+  background-position: -316px -110px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-video-bleu {
+  background-position: -56px -55px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-Ausy-blanc-rouge-sur-fd-bleu {
+  background-position: 0 -110px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-header {
+  background-position: -195px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-hover-blanc {
+  background-position: -317px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-ausy-blanc-rouge {
+  background-position: 0 -175px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-blanche {
+  background-position: -185px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-bleue {
+  background-position: -159px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-bleues-RTO {
+  background-position: 0 -1427px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-dev-KO {
+  background-position: -194px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-jaunes-RTO {
+  background-position: 0 -1167px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-rouges-RTO {
+  background-position: 0 -647px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-KO {
+  background-position: -314px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-OK {
+  background-position: 0 -415px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-KO {
+  background-position: -74px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-OK {
+  background-position: -194px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-KO {
+  background-position: -300px -175px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-OK {
+  background-position: -74px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-KO {
+  background-position: -314px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-OK {
+  background-position: -75px -502px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-vertes-RTO {
+  background-position: 0 -907px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu {
+  background-position: -34px -55px;
+  height: 22px;
+  width: 22px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu:hover, .icons-picto-crayon-bleu.picto-crayon-bleu-hover {
+  background-position: -137px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf {
+  background-position: -211px -55px;
+  height: 40px;
+  width: 29px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf:hover, .icons-picto-pdf.picto-pdf-hover {
+  background-position: -240px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-question {
+  background-position: -269px -55px;
+  height: 43px;
+  width: 25px;
+}
+
+/* line 20, ../scss/1_user-account.scss */
+.label {
+  color: black !important;
+}
+
+/* line 25, ../scss/1_user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row {
+  display: flex;
+  padding: 5px 5px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+/* line 32, ../scss/1_user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-view-node {
+  flex: 2.5;
+}
+/* line 34, ../scss/1_user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-view-node a {
+  font-size: 18px;
+}
+/* line 38, ../scss/1_user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node {
+  flex: 1;
+  text-align: right;
+}
+/* line 41, ../scss/1_user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node a {
+  visibility: hidden;
+}
+/* line 43, ../scss/1_user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node a:after {
+  visibility: visible;
+  background-image: url("../images/edit_pencil.png");
+  background-size: 24px 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  content: "";
+}
+/* line 53, ../scss/1_user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node a:hover:after {
+  background-image: url("../images/edit_pencil_hover.png");
+}
+
+/* PAGE PROFIL USER */
+/* line 73, ../scss/1_user-account.scss */
+.section-user h1.page-header {
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-family: 'Titillium_websemiBold', sans-serif;
+}
+/* line 78, ../scss/1_user-account.scss */
+.section-user article {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid #cdd0d6;
+}
+/* line 84, ../scss/1_user-account.scss */
+.section-user article .field {
+  padding-top: 20px;
+}
+/* line 86, ../scss/1_user-account.scss */
+.section-user article .field.field--name-user-picture {
+  background: url(../images/icons-se2d4a77255.png) no-repeat;
+  background-position: -120px -415px;
+  height: 85px;
+  width: 74px;
+  display: inline-block;
+  margin-right: 20px;
+  padding-top: 0;
+}
+/* line 94, ../scss/1_user-account.scss */
+.section-user article .field.field--name-user-picture a {
+  position: relative;
+  display: block;
+}
+/* line 97, ../scss/1_user-account.scss */
+.section-user article .field.field--name-user-picture a .img-responsive {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 64px;
+  height: 60px;
+  margin: 0;
+  position: absolute;
+  top: 22px;
+  left: 5px;
+}
+/* line 110, ../scss/1_user-account.scss */
+.section-user .region-content section {
+  padding: 20px 30px;
+  border-bottom: 1px solid #cdd0d6;
+}
+/* line 113, ../scss/1_user-account.scss */
+.section-user .region-content section h2.block-title {
+  font-size: 25px;
+  font-family: 'Titillium_websemiBold', sans-serif;
+  text-transform: uppercase;
+  color: #0678be;
+}

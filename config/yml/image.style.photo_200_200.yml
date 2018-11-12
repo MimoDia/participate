@@ -1,0 +1,16 @@
+uuid: 1024e598-f013-46b6-b726-58e8313be1c0
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dxJGcQQHY7asfY8FjCO-RK1zMLZGarwnmXxE9YhyeEU
+name: photo_200_200
+label: 'Photo_200*200'
+effects:
+  914ea6a3-087f-4591-8325-7c923519e9ff:
+    uuid: 914ea6a3-087f-4591-8325-7c923519e9ff
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200

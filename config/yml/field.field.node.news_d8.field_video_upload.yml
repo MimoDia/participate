@@ -1,0 +1,28 @@
+uuid: dc1d3eac-e9ab-4096-bfc6-cd54ae175d56
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_upload
+    - node.type.news_d8
+  module:
+    - video
+_core:
+  default_config_hash: KeHMTyeKCs0F00gmEONS1McHCQNpD4DtFzzS8t8oI_Q
+id: node.news_d8.field_video_upload
+field_name: field_video_upload
+entity_type: node
+bundle: news_d8
+label: Vidéo
+description: 'Chargez dans ce champs le fichier vidéo que vous souhaitez partager'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

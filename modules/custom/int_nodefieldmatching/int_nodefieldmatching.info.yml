@@ -1,0 +1,6 @@
+name: int_nodefieldmatching
+description: 'module how take copie the field value of content type to an other content type field'
+type: module
+core: 8.x
+version: 8.x
+package: Custom

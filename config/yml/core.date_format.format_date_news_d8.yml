@@ -1,0 +1,10 @@
+uuid: 7154ce36-5616-429f-8b24-9aa6da059058
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yiHomRshDWgX-yVFOiLlIN1-GC9LlD_anNadonADmgI
+id: format_date_news_d8
+label: 'Format Date Actualité'
+locked: false
+pattern: 'd M'

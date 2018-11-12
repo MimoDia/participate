@@ -1,0 +1,19 @@
+uuid: 6811ca83-2134-49a0-9c58-202b5f75679f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: PSuXLH93Q-zwAwWAg_e1EAUSOHntJLNOP6gurUkS-go
+name: 'Dossier de compétences'
+type: competencies_file
+description: 'Utilisez le Dossier de Compétences pour que chaque Drupalien puisse indiquer ses compétences techniques, ses expériences professionnelles, ses formations, etc...'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,79 @@
+{
+    "name": "drupal/drupal",
+    "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/core": "8.5.3",
+        "composer/installers": "^1.0.21",
+        "wikimedia/composer-merge-plugin": "x.x",
+        "drupal/config_installer": "x.x",
+        "drush/drush": "^9",
+        "drupal/admin_toolbar": "^1.22",
+        "drupal/module_filter": "^3.1",
+        "drupal/tvi": "^1.0",
+        "drupal/taxonomy_manager": "1.x-dev",
+        "drupal/entity_print": "^2.0",
+        "drupal/devel": "^1.2",
+        "drupal/views_slideshow": "^4.6",
+        "drupal/image_widget_crop": "^2.1",
+        "drupal/console": "^1.8",
+        "drupal/geolocation": "^1.11",
+        "drupal/facets": "^1.0",
+        "drupal/search_api": "^1.6",
+        "drupal/paragraphs": "^1.2",
+        "drupal/video_embed_field": "^1.5",
+        "drupal/entity_reference_revisions": "^1.4",
+        "drupal/bat_api": "^1.0",
+        "drupal/bat": "^1.0",
+        "drupal/services": "^4.0",
+        "drupal/bootstrap": "^3.9",
+        "drupal/easy_breadcrumb": "^1.6"
+
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist",
+        "autoloader-suffix": "Drupal8"
+    },
+    "extra": {
+        "_readme": [
+            "By default Drupal loads the autoloader from ./vendor/autoload.php.",
+            "To change the autoloader you can edit ./autoload.php."
+        ],
+        "merge-plugin": {
+            "include": [
+                "core/composer.json"
+            ],
+            "recurse": false,
+            "replace": false,
+            "merge-extra": false
+        },
+        "installer-paths": {
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "core": [
+                "type:drupal-core"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+        }
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "scripts": {
+        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
+        "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
+        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
+        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
+    }
+}

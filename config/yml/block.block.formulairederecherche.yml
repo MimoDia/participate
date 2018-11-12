@@ -1,0 +1,20 @@
+uuid: f85d8aa4-7420-4d83-8b1c-0263dabe58ec
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bootstrap_child
+id: formulairederecherche
+theme: bootstrap_child
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulaire de recherche'
+  provider: search
+  label_display: '0'
+visibility: {  }

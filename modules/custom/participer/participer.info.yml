@@ -1,0 +1,18 @@
+name: participer
+description: 'module de participation à un événement'
+type: module
+core: 8.x
+version: 8.4
+package: Custom
+dependencies:
+  - datetime
+  - node
+  - text
+  - user
+  - better_exposed_filters
+  - colorbox
+  - image
+  - pathauto
+  - addtocalendar
+  - geolocation
+  - twig_tweak

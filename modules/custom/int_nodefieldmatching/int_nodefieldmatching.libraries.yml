@@ -1,0 +1,8 @@
+int_nodefieldmatching:
+  version: VERSION
+  css:
+    theme:
+      css/int_nodefieldmatching.css: {}
+  js:
+    js/int_nodefieldmatching.js: {}
+

@@ -1,0 +1,14 @@
+participer:
+  version: VERSION
+  css:
+    theme:
+      css/participer.css: {}
+      css/participer.css: {}
+      css/wysiwyg.css: {}
+  js:
+    js/participer.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once 

@@ -1,0 +1,186 @@
+/*Default variables.*/
+@import "default-variables";
+
+ /*Base-theme overrides.*/
+@import 'overrides';
+
+//mixins
+@import 'mixins';
+
+//sprite
+@import 'icons';
+
+/******** SECTION LOGIN PAGE LOGIN / PAGE REINIT MDP **********/
+.path-user .navbar-header {
+  border-bottom: 0;
+}
+.section-login {
+  position: relative;
+  h1.page-header {
+    padding-left: 0;
+    position: absolute;
+    top: -55px;
+    color: white;
+    right: 0;
+    text-align: right;
+    margin-right: 5px;
+  }
+  .user-login-form,
+  .user-pass {
+    padding: 20px 125px 50px;
+    @media (max-width:728px) {
+      padding: 20px 20px 50px; 
+    }
+      label {
+        color: $drupal-blue;
+        font-family: 'titillium_websemiBold', sans-serif;
+        font-size: 1.563em;
+      }
+      input{
+        border: 0;
+        background-color: rgba(6,120, 190, 0.2) !important;
+        color: $drupal-blue;
+        border-bottom: 1px solid $cgd8-blue;
+        padding: 15px 5px 0 15px;
+        @include border-radius-0;
+        height: auto;
+        font-size: 1.2em;
+      }
+      .form-group {
+        margin-top: 30px;
+        .description {
+          font-size: 1.250em;
+          color: $drupal-blue;
+          padding-top: 30px;
+          ul {
+            margin-bottom: 50px;
+          }
+        }
+      }
+      .btn-primary {
+        display: inline-block;
+        width: auto;
+        padding-right: 20px;
+        background-color: transparent;
+        font-size: 1.563em;
+        float: left;
+        color: $drupal-blue;
+        border: 0;
+        padding: 0 0 0 30px;
+        font-family: 'titillium_websemiBold', sans-serif;
+        .glyphicon-log-in {
+          display: none;
+        }
+        &:hover::before {
+          content: url(../images/btn-goutte1-hover-bleu-fonce.png);
+          color: $color-white;
+        }
+        &::before {
+          content: url(../images/btn-goutte1.png); 
+          padding-right:10px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      &:hover {
+        color: $cgd8-blue;
+      }
+    }
+    a.btn-primary {
+      &:hover {
+        color: $cgd8-blue;
+      }
+    }
+  }
+}
+/******** / SECTION LOGIN PAGE LOGIN / PAGE REINIT MDP **********/
+
+/******** SECTION CONTACT PAGE CONTACT **********/
+.section-contact .contact-form {
+    padding: 20px 125px 50px 30px;
+    @media (max-width:728px) {
+      padding: 20px 20px 50px; 
+    }
+    label {
+      color: $drupal-blue;
+      font-family: 'titillium_websemiBold', sans-serif;
+      font-size: 1.563em;
+    }
+    input{
+      border: 0;
+      background-color: rgba(6,120, 190, 0.2) !important;
+      color: $drupal-blue;
+      border-bottom: 1px solid $cgd8-blue;
+      padding: 15px 5px 0 15px;
+      @include border-radius-0;
+      height: auto;
+      font-size: 1.2em;
+    }
+    .form-type-item {
+      color: $cgd8-blue;
+    }
+    .form-group {
+      margin-top: 30px;
+      position: relative;
+      .description {
+        font-size: 1.250em;
+        color: $drupal-blue;
+        padding-top: 30px;
+        ul {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .form-item-name,
+    .form-item-mail {
+      border-bottom: 1px solid $cgd8-blue;
+      margin-bottom: 0;
+    }
+    .form-textarea {
+      @include border-radius-0;
+    }
+    .control-label {
+      font-size: 1em;
+      font-family: 'titillium_webregular', sans-serif;
+      color: $cgd8-blue;
+      .form-checkbox {
+        @include border-radius-0;
+      }
+    }
+    .checkbox input[type="checkbox"] {
+      position: relative;
+    }
+    .btn-primary {
+      display: inline-block;
+      width: auto;
+      padding-right: 20px;
+      background-color: transparent;
+      font-size: 1.563em;
+      float: left;
+      color: $drupal-blue;
+      border: 0;
+      padding: 0 0 0 30px;
+      font-family: 'titillium_websemiBold', sans-serif;
+      .glyphicon-log-in {
+        display: none;
+      }
+      &:hover::before {
+        content: url(../images/btn-goutte1-hover-bleu-fonce.png);
+        color: $color-white;
+      }
+      &::before {
+        content: url(../images/btn-goutte1.png); 
+        padding-right:10px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    &:hover {
+      color: $cgd8-blue;
+    }
+  }
+  a.btn-primary {
+    &:hover {
+      color: $cgd8-blue;
+    }
+  }
+}
+/******** FIN SECTION CONTACT PAGE CONTACT **********/

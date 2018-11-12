@@ -1,0 +1,36 @@
+uuid: 2e1b97fb-b217-4fdf-99cb-d31883cc8501
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_responsable_commercial
+  module:
+    - user
+_core:
+  default_config_hash: 0O0p-ytnoIcZ6hhENm5YbHMGTa9KWZCCPk87qWuJ-xk
+id: user.user.field_responsable_commercial
+field_name: field_responsable_commercial
+entity_type: user
+bundle: user
+label: 'Responsable commercial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        manager: manager
+        drupalien: '0'
+        administrator: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

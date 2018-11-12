@@ -1,0 +1,34 @@
+uuid: f74f3896-2061-4efe-a93a-61efce9a6da7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - route_condition
+    - test_d8
+    - user
+  theme:
+    - bootstrap_child
+id: timerqcmtestdrupal8
+theme: bootstrap_child
+region: content
+weight: -8
+provider: null
+plugin: timer_qcm_test_drupal8
+settings:
+  id: timer_qcm_test_drupal8
+  label: 'Timer Qcm Test Drupal 8'
+  provider: test_d8
+  label_display: '0'
+visibility:
+  route:
+    id: route
+    routes: test_drupal8.qcm
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      drupalien: drupalien
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

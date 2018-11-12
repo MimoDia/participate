@@ -1,0 +1,16 @@
+number_of_questions: 40
+time_to_complete_test: 3600
+num_tests_per_page: 20
+percent:
+  average: 50
+  graduation: 70
+namespace:
+  qcm_form: Drupal\test_d8\Form\TestDrupal8QcmForm
+chart_colors:
+  - '#ede72d'
+  - '#7cbd49'
+  - '#2ba4ed'
+  - '#f24942'
+_core:
+  default_config_hash: '-CmhZY8OJdxFvUnam-PpoU7HQJE-I9FLvUKPypgtCkc'
+langcode: fr

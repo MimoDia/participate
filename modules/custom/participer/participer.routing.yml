@@ -1,0 +1,30 @@
+
+participer.participer.form: # nomdumodule.nomdelaroute (route name)
+  path: '/participer-evenement' # node/98/history dans l'url
+  defaults:
+    _title: 'Participation à cet événement'
+    _form: '\Drupal\participer\Form\SubmitForm'
+  requirements:
+    _permission: 'mapermission access formBlockToEventPartcicipate'
+    #_access: 'TRUE'
+
+# participer.node.dataformdelete: # nomdumodule.nomdelaroute (route name)
+#  path: '/nombre-participer'
+#  defaults:
+#   _title: 'liste des nodes disponibles'
+#   _controller: '\Drupal\participer\Controller\NombreParticipantController::calcul'
+#   nodetype: NULL
+#  requirements:
+#   _permission: 'mapermission access formBlockToEventPartcicipate'
+
+
+participer.listedesnodes.detypeevenement: # nomdumodule.nomdelaroute (route name)
+  path: '/liste-des-evenements' # node/98/history dans l'url
+  defaults:
+    _title: 'Liste de tous les évenements'
+    _controller: '\Drupal\participer\Controller\ParticiperNodeListeController::nodeListe'
+  requirements:
+    _permission: 'mapermission access a la liste de tous les types de contenus evenement'
+    #_access: 'TRUE'
+
+

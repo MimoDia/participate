@@ -1,0 +1,177 @@
+<?php
+
+use Drupal\taxonomy\Entity\Term;
+
+// For deleting our table named "participer_event_inscription".
+ use Drupal\Core\Database\Schema;
+
+
+function participer_schema(){
+
+	$schema['participer_event_inscription'] = array(
+		'description' => 'This table is used to store user inscription for an event',
+		'fields' 		=> array(
+			'pid'					=> array(  
+										'type' => 'serial',
+										'unsigned' => TRUE,
+										'not null' => TRUE
+									),
+
+			'nid'					=> array(
+										'type' => 'int',
+										'unsigned' => TRUE,
+										'not null' => TRUE
+									),
+
+			'node_title' 	=> array(
+								        'type' => 'varchar',
+								        'length' => 255,
+										'not null' => TRUE
+									),
+
+			'uid'					=> array(
+										'type' => 'int',
+										'unsigned' => TRUE,
+										'not null' => TRUE
+									),
+
+			'prenom' 	=> array(
+								        'type' => 'varchar',
+								        'length' => 255,
+										'not null' => TRUE
+									),
+			
+			'nom' 	=> array(
+								        'type' => 'varchar',
+								        'length' => 255,
+										'not null' => TRUE
+									),
+
+			'email' 	=> array(
+								        'type' => 'varchar',
+								        'length' => 255,
+										'not null' => TRUE
+									),
+			'user_picture' 	=> array(
+								        'type' => 'varchar',
+								        'length' => 255,
+										'not null' => TRUE
+									),
+
+			'date'					=> array(
+										'type' => 'int',
+										'unsigned' => TRUE,
+										'not null' => TRUE
+									),
+			'choix_participation' 	=> array(
+								        'type' => 'varchar',
+								        'length' => 255,
+										'not null' => TRUE
+									),
+
+		),
+		'foreign keys' 	=> array(
+			'node_field_data' => array(
+							'table' => 'node_field_data',
+							'columns' => array(
+								'nid' => 'nid',
+							),
+			),
+			'users_field_data' => array(
+							'table' => 'users_field_data',
+							'columns' => array(
+								'uid' => 'uid',
+							),
+			),
+		),
+		'primary key' => array(
+			'pid'
+		),
+	);
+
+	return $schema;
+
+}
+
+
+// Des que le module est activé les termes de taxo sont aotomatiquement enregistrés en BD.
+// use Drupal\taxonomy\Entity\Term;
+
+	function participer_install() {
+		 	  // Nom machine du vocabulaire de taxonomie.
+		  $vocabulaireMachineNAme = 'Paris_Lyon';
+		     // Nom du vocabulaire de taxonomie en Backoffice.
+		  $vocabularyName= 'Paris et Lyon';
+
+			 // On charge la liste des vocabulaires existants.
+			$listeDesVocabulaire= \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
+			
+			// Creation du vocabulaire Pari_Lyon si ce dernier n'existe pas déjà . 
+			if(!isset($listeDesVocabulaire[$vocabularyName])){
+			    $vocabulary = \Drupal\taxonomy\Entity\Vocabulary::create(array(
+			    'vid' => $vocabulaireMachineNAme,
+			    //'machine_name' => $vid,s
+			    'description' => '',
+			    'name' => $vocabularyName,
+			    ));
+			   $vocabulary->save();
+			 }
+
+		  // Noms des termes de taxonomie à ajouter.
+		  $items = [
+		      'Paris Drupal Teaching ',
+		      'Paris Drupal Team Foot',
+		      'Paris Team Drupal Team agile',
+		      'Paris Managing Team',
+		      'Paris drupal meetup',
+		      'Lyon drupal Coding ',
+		      'Lyon drupal Meetup ',
+		      'Lyon drupal meetup ',
+		      'Lyon Managing Team',
+		      'Lyon team foot',
+		  ];
+
+		  // Si ces termes (items), n'existent pas, on les crée.
+		 if(isset($items) ){ 
+			    foreach ($items as $item) {
+			      $term = Term::create(array(
+				'parent' => array(),
+				'name' => $item,
+				'vid' => $vocabulaireMachineNAme,
+			      ))->save();
+			    }
+		} 
+	}
+
+
+function participer_uninstall() { 
+		  // Nom machine du vocabulaire de taxonomie.
+		  $vocabulaireMachineNAme ='Paris_Lyon';
+
+		  $vocabularyName= 'Paris et Lyon';
+		  	// Supprimer les termes de taxo a la desinstallation du module.
+			$tids = \Drupal::entityQuery('taxonomy_term')
+    	    ->condition('vid', 'Paris_Lyon')
+    		->execute();
+				// Supression des terms de taxo apres desinstallation du module.
+    		$controller = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+		  	$entities = $controller->loadMultiple($tids);
+		  	$vocab=[];
+		  	foreach ($entities as $key => $mon_vocabulaire) {
+		  		$vocab=$mon_vocabulaire->delete();
+		  	}
+			// Supprimer le vocabulaire. 
+			if($vocabulaireMachineNAme){
+				
+ 		 	 	$vocabulary = \Drupal::entityTypeManager()->getStorage('taxonomy_vocabulary')->load($vocabulaireMachineNAme)->delete();
+ 		 	 }
+
+ 		 	 // Delete the table named "participer_event_inscription" at the time in we uninstall
+ 		 	 // module named "participer". Before it we have to use the Schema Class
+ 		 	    db_drop_table($participer_event_inscription);
+ 		 	  
+
+}
+
+
+

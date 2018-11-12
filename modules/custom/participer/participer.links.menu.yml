@@ -1,0 +1,20 @@
+
+# Ici pas besoin de faire un lien de menu pour le formulaire de "participation"
+# car on aura des message d'erreur liée au fait aux conditions d'apparition de 
+# du formulaire que si une URL contien un type de node particulier comme le
+# node 'evenement'
+
+#participer.evenement:
+# title: 'Formulaire événement'
+# route_name: participer.participer.form # une des routes choisie dans le fichier routing.yml
+# description: 'Ajout un lien de menu à la barre des menus' 
+# menu_name: main
+
+
+##################### CREEE UN LIEN DE MENU #####################
+##participer.listedesnodes.detypeevenement:
+##  title: 'Liste des evenements'
+##  description: 'Ajout un lien de "liste des évenements" menu à la barre des menus' 
+##  route_name: participer.listedesnodes.detypeevenement # route qui a implémenté la page 
+##  menu_name: main
+##################### FIN LIEN DE MENU #####################                        

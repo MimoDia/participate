@@ -1,0 +1,15 @@
+uuid: df6f90ac-c705-4274-a281-780f0427702f
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YoA6b-oT0n5ZWFnsG2485GkgqbCxrTWoQc9zlX4ZpaI
+id: manager
+label: Manager
+weight: -8
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'change own username'
+  - 'view field_nom'
+  - 'view field_prenom'

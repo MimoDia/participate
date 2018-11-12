@@ -1,0 +1,85 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+/* COLORS */
+/* FONTS */
+/* TITLE */
+/* NAVIGATION */
+/* line 3, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .expert .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .expert .views-field-view-user .field-content a {
+  background: #f24942;
+  color: #39425b;
+  display: block;
+  padding: 5px;
+}
+/* line 10, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .expert .views-field-view-user .field-content a:hover,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .expert .views-field-view-user .field-content a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* line 18, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .webmaster .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .webmaster .views-field-view-user .field-content a {
+  background: #ede72d;
+  color: #39425b;
+  display: block;
+  padding: 5px;
+}
+/* line 25, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .webmaster .views-field-view-user .field-content a:hover,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .webmaster .views-field-view-user .field-content a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* line 33, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .themer .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .themer .views-field-view-user .field-content a {
+  background: #7cbd49;
+  color: #39425b;
+  display: block;
+  padding: 5px;
+}
+/* line 40, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .themer .views-field-view-user .field-content a:hover,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .themer .views-field-view-user .field-content a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* line 47, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .developpement .views-field-view-user .field-content a,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .developpement .views-field-view-user .field-content a {
+  background: #2ba4ed;
+  color: #39425b;
+  display: block;
+  padding: 5px;
+}
+/* line 54, ../scss/1_frontpage-page-manager.scss */
+#block-views-block-tests-d8-frontpage-role-manager-mes-consultants .view-tests-drupal-8 .view-content .developpement .views-field-view-user .field-content a:hover,
+#block-views-block-tests-d8-frontpage-role-manager-tous-les-consulta .view-tests-drupal-8 .view-content .developpement .views-field-view-user .field-content a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* line 61, ../scss/1_frontpage-page-manager.scss */
+.views-field-field-score-nid,
+.views-field-field-score-result,
+.views-field-created {
+  display: flex;
+  padding: 5px;
+  text-indent: 0.5em;
+}

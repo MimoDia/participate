@@ -1,0 +1,30 @@
+<?php
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/**
+ * @file
+ * Contains redirect_user.module.
+ */
+
+ // hook We want to redirect user on logout to the login page.
+function redirect_user_user_logout($account) {
+
+  $response = new RedirectResponse("/user/login");
+  $response->send();
+  return;
+}
+
+
+function redirect_user_form_alter(&$form, &$fotm_state, $form_id){
+	
+
+	if ('user_login_form' == $form_id){
+		$form['form_item'] = array(
+		  '#type' => 'link',
+		  '#title' => t('My Form Item'),
+		  '#attribute' => ('/user/password'),
+		  '#markup' => '<a class="btn btn-primary" href="/user/password">Mot de passe oublié</a> ',
+		  '#weight' => 100, // Add markup after form item
+		);
+	}
+}

@@ -1,0 +1,31 @@
+uuid: 327510e3-c027-4ce3-8b94-b951c08a72dd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.news_d8
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: OjV0r9c1BJXJhExa2qMcdtFkcF62d0qzCGo12IHmJTw
+id: node.news_d8.field_tags
+field_name: field_tags
+entity_type: node
+bundle: news_d8
+label: Tags
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

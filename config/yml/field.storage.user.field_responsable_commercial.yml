@@ -1,0 +1,21 @@
+uuid: 231c1dcc-5d73-4508-ac42-5d3da0ba9824
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 06swKPwz406zNZRv3CefdYGoRxCYk4wW9dXdAlPtF5E
+id: user.field_responsable_commercial
+field_name: field_responsable_commercial
+entity_type: user
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

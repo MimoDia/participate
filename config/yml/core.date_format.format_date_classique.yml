@@ -1,0 +1,10 @@
+uuid: cce5b542-4157-4fc8-b4b9-50ac1c0df333
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8SNRu8Qvstcw2PkiM7gL_1cWPd2MZh91uCT5RtPf8hU
+id: format_date_classique
+label: 'Format Date Classique'
+locked: false
+pattern: d/m/Y

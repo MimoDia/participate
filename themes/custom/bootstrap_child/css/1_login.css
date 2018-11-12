@@ -1,0 +1,594 @@
+/*Default variables.*/
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+/* COLORS */
+/* FONTS */
+/* TITLE */
+/* NAVIGATION */
+/*Base-theme overrides.*/
+/**
+ * Mixins.
+ *
+ * 
+ *
+ */
+/*@mixin title-article {// style titre des articles
+	font-size: 1.750em;
+    text-transform: uppercase;
+    color: $cgd8-blue;
+    font-family: 'titillium_websemiBold', sans-serif;
+    text-decoration: none;
+}*/
+/* line 424, icons/*.png */
+.icons-sprite, .icons-arrow-down, .icons-arrow-left, .icons-arrow-right, .icons-arrow-up, .icons-btn-goutte1-hover-blanc, .icons-btn-goutte1-hover-bleu-fonce, .icons-btn-goutte1, .icons-btn-goutte2-hover-blanc, .icons-btn-goutte2, .icons-goutte-ajout-commentaire, .icons-goutte-audio, .icons-goutte-drupal-bg-profil, .icons-goutte-drupal-bg-user-dev-bleu, .icons-goutte-drupal-bg-user-expert-rouge, .icons-goutte-drupal-bg-user-themer-vert, .icons-goutte-drupal-bg-user-webm-jaune, .icons-goutte-participe-non-rouge, .icons-goutte-participe-oui-vert, .icons-goutte-participe-peut-etre-jaune, .icons-lecteur-photo-bleu, .icons-lecteur-video-bleu, .icons-logo-Ausy-blanc-rouge-sur-fd-bleu, .icons-logo-D8-header, .icons-logo-D8-hover-blanc, .icons-logo-ausy-blanc-rouge, .icons-loupe-blanche, .icons-loupe-bleue, .icons-lunettes-bleues-RTO, .icons-lunettes-dev-KO, .icons-lunettes-jaunes-RTO, .icons-lunettes-rouges-RTO, .icons-lunettes-test-dev-KO, .icons-lunettes-test-dev-OK, .icons-lunettes-test-expert-KO, .icons-lunettes-test-expert-OK, .icons-lunettes-test-themer-KO, .icons-lunettes-test-themer-OK, .icons-lunettes-test-webm-KO, .icons-lunettes-test-webm-OK, .icons-lunettes-vertes-RTO, .icons-picto-crayon-bleu, .icons-picto-pdf, .icons-picto-question {
+  background-image: url('/images/icons-se2d4a77255.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-down {
+  background-position: 0 -55px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-left {
+  background-position: -16px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-right {
+  background-position: -25px -55px;
+  height: 16px;
+  width: 9px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-up {
+  background-position: -300px -110px;
+  height: 9px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-blanc {
+  background-position: -132px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1-hover-bleu-fonce {
+  background-position: -88px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte1 {
+  background-position: -294px -55px;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2-hover-blanc {
+  background-position: -44px 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-goutte2 {
+  background-position: 0 0;
+  height: 50px;
+  width: 44px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-ajout-commentaire {
+  background-position: -342px -415px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-audio {
+  background-position: 0 -502px;
+  height: 87px;
+  width: 75px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-profil {
+  background-position: -120px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-dev-bleu {
+  background-position: -194px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-expert-rouge {
+  background-position: -268px -415px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-themer-vert {
+  background-position: 0 -245px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-drupal-bg-user-webm-jaune {
+  background-position: 0 -330px;
+  height: 85px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge {
+  background-position: -176px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-non-rouge:hover, .icons-goutte-participe-non-rouge.goutte-participe-non-rouge-hover {
+  background-position: -368px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert {
+  background-position: -224px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-oui-vert:hover, .icons-goutte-participe-oui-vert.goutte-participe-oui-vert-hover {
+  background-position: -338px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune {
+  background-position: -320px 0;
+  height: 55px;
+  width: 48px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goutte-participe-peut-etre-jaune:hover, .icons-goutte-participe-peut-etre-jaune.goutte-participe-peut-etre-jaune-hover {
+  background-position: -272px 0;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-photo-bleu {
+  background-position: -316px -110px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lecteur-video-bleu {
+  background-position: -56px -55px;
+  height: 22px;
+  width: 81px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-Ausy-blanc-rouge-sur-fd-bleu {
+  background-position: 0 -110px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-header {
+  background-position: -195px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-D8-hover-blanc {
+  background-position: -317px -502px;
+  height: 145px;
+  width: 122px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-logo-ausy-blanc-rouge {
+  background-position: 0 -175px;
+  height: 65px;
+  width: 300px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-blanche {
+  background-position: -185px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-loupe-bleue {
+  background-position: -159px -55px;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-bleues-RTO {
+  background-position: 0 -1427px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-dev-KO {
+  background-position: -194px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-jaunes-RTO {
+  background-position: 0 -1167px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-rouges-RTO {
+  background-position: 0 -647px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-KO {
+  background-position: -314px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-dev-OK {
+  background-position: 0 -415px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-KO {
+  background-position: -74px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-expert-OK {
+  background-position: -194px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-KO {
+  background-position: -300px -175px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-themer-OK {
+  background-position: -74px -245px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-KO {
+  background-position: -314px -330px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-test-webm-OK {
+  background-position: -75px -502px;
+  height: 70px;
+  width: 120px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lunettes-vertes-RTO {
+  background-position: 0 -907px;
+  height: 260px;
+  width: 445px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu {
+  background-position: -34px -55px;
+  height: 22px;
+  width: 22px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-crayon-bleu:hover, .icons-picto-crayon-bleu.picto-crayon-bleu-hover {
+  background-position: -137px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf {
+  background-position: -211px -55px;
+  height: 40px;
+  width: 29px;
+}
+/* line 59, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-pdf:hover, .icons-picto-pdf.picto-pdf-hover {
+  background-position: -240px -55px;
+}
+
+/* line 84, ../../../../../../../../usr/local/share/gems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-picto-question {
+  background-position: -269px -55px;
+  height: 43px;
+  width: 25px;
+}
+
+/******** SECTION LOGIN PAGE LOGIN / PAGE REINIT MDP **********/
+/* line 14, ../scss/1_login.scss */
+.path-user .navbar-header {
+  border-bottom: 0;
+}
+
+/* line 17, ../scss/1_login.scss */
+.section-login {
+  position: relative;
+}
+/* line 19, ../scss/1_login.scss */
+.section-login h1.page-header {
+  padding-left: 0;
+  position: absolute;
+  top: -55px;
+  color: white;
+  right: 0;
+  text-align: right;
+  margin-right: 5px;
+}
+/* line 28, ../scss/1_login.scss */
+.section-login .user-login-form,
+.section-login .user-pass {
+  padding: 20px 125px 50px;
+}
+@media (max-width: 728px) {
+  /* line 28, ../scss/1_login.scss */
+  .section-login .user-login-form,
+  .section-login .user-pass {
+    padding: 20px 20px 50px;
+  }
+}
+/* line 34, ../scss/1_login.scss */
+.section-login .user-login-form label,
+.section-login .user-pass label {
+  color: #0678be;
+  font-family: 'titillium_websemiBold', sans-serif;
+  font-size: 1.563em;
+}
+/* line 39, ../scss/1_login.scss */
+.section-login .user-login-form input,
+.section-login .user-pass input {
+  border: 0;
+  background-color: rgba(6, 120, 190, 0.2) !important;
+  color: #0678be;
+  border-bottom: 1px solid #39425b;
+  padding: 15px 5px 0 15px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  height: auto;
+  font-size: 1.2em;
+}
+/* line 49, ../scss/1_login.scss */
+.section-login .user-login-form .form-group,
+.section-login .user-pass .form-group {
+  margin-top: 30px;
+}
+/* line 51, ../scss/1_login.scss */
+.section-login .user-login-form .form-group .description,
+.section-login .user-pass .form-group .description {
+  font-size: 1.250em;
+  color: #0678be;
+  padding-top: 30px;
+}
+/* line 55, ../scss/1_login.scss */
+.section-login .user-login-form .form-group .description ul,
+.section-login .user-pass .form-group .description ul {
+  margin-bottom: 50px;
+}
+/* line 60, ../scss/1_login.scss */
+.section-login .user-login-form .btn-primary,
+.section-login .user-pass .btn-primary {
+  display: inline-block;
+  width: auto;
+  padding-right: 20px;
+  background-color: transparent;
+  font-size: 1.563em;
+  float: left;
+  color: #0678be;
+  border: 0;
+  padding: 0 0 0 30px;
+  font-family: 'titillium_websemiBold', sans-serif;
+}
+/* line 71, ../scss/1_login.scss */
+.section-login .user-login-form .btn-primary .glyphicon-log-in,
+.section-login .user-pass .btn-primary .glyphicon-log-in {
+  display: none;
+}
+/* line 74, ../scss/1_login.scss */
+.section-login .user-login-form .btn-primary:hover::before,
+.section-login .user-pass .btn-primary:hover::before {
+  content: url(../images/btn-goutte1-hover-bleu-fonce.png);
+  color: white;
+}
+/* line 78, ../scss/1_login.scss */
+.section-login .user-login-form .btn-primary::before,
+.section-login .user-pass .btn-primary::before {
+  content: url(../images/btn-goutte1.png);
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 84, ../scss/1_login.scss */
+.section-login .user-login-form .btn-primary:hover,
+.section-login .user-pass .btn-primary:hover {
+  color: #39425b;
+}
+/* line 89, ../scss/1_login.scss */
+.section-login .user-login-form a.btn-primary:hover,
+.section-login .user-pass a.btn-primary:hover {
+  color: #39425b;
+}
+
+/******** / SECTION LOGIN PAGE LOGIN / PAGE REINIT MDP **********/
+/******** SECTION CONTACT PAGE CONTACT **********/
+/* line 98, ../scss/1_login.scss */
+.section-contact .contact-form {
+  padding: 20px 125px 50px 30px;
+}
+@media (max-width: 728px) {
+  /* line 98, ../scss/1_login.scss */
+  .section-contact .contact-form {
+    padding: 20px 20px 50px;
+  }
+}
+/* line 103, ../scss/1_login.scss */
+.section-contact .contact-form label {
+  color: #0678be;
+  font-family: 'titillium_websemiBold', sans-serif;
+  font-size: 1.563em;
+}
+/* line 108, ../scss/1_login.scss */
+.section-contact .contact-form input {
+  border: 0;
+  background-color: rgba(6, 120, 190, 0.2) !important;
+  color: #0678be;
+  border-bottom: 1px solid #39425b;
+  padding: 15px 5px 0 15px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  height: auto;
+  font-size: 1.2em;
+}
+/* line 118, ../scss/1_login.scss */
+.section-contact .contact-form .form-type-item {
+  color: #39425b;
+}
+/* line 121, ../scss/1_login.scss */
+.section-contact .contact-form .form-group {
+  margin-top: 30px;
+  position: relative;
+}
+/* line 124, ../scss/1_login.scss */
+.section-contact .contact-form .form-group .description {
+  font-size: 1.250em;
+  color: #0678be;
+  padding-top: 30px;
+}
+/* line 128, ../scss/1_login.scss */
+.section-contact .contact-form .form-group .description ul {
+  margin-bottom: 50px;
+}
+/* line 133, ../scss/1_login.scss */
+.section-contact .contact-form .form-item-name,
+.section-contact .contact-form .form-item-mail {
+  border-bottom: 1px solid #39425b;
+  margin-bottom: 0;
+}
+/* line 138, ../scss/1_login.scss */
+.section-contact .contact-form .form-textarea {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+/* line 141, ../scss/1_login.scss */
+.section-contact .contact-form .control-label {
+  font-size: 1em;
+  font-family: 'titillium_webregular', sans-serif;
+  color: #39425b;
+}
+/* line 145, ../scss/1_login.scss */
+.section-contact .contact-form .control-label .form-checkbox {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+/* line 149, ../scss/1_login.scss */
+.section-contact .contact-form .checkbox input[type="checkbox"] {
+  position: relative;
+}
+/* line 152, ../scss/1_login.scss */
+.section-contact .contact-form .btn-primary {
+  display: inline-block;
+  width: auto;
+  padding-right: 20px;
+  background-color: transparent;
+  font-size: 1.563em;
+  float: left;
+  color: #0678be;
+  border: 0;
+  padding: 0 0 0 30px;
+  font-family: 'titillium_websemiBold', sans-serif;
+}
+/* line 163, ../scss/1_login.scss */
+.section-contact .contact-form .btn-primary .glyphicon-log-in {
+  display: none;
+}
+/* line 166, ../scss/1_login.scss */
+.section-contact .contact-form .btn-primary:hover::before {
+  content: url(../images/btn-goutte1-hover-bleu-fonce.png);
+  color: white;
+}
+/* line 170, ../scss/1_login.scss */
+.section-contact .contact-form .btn-primary::before {
+  content: url(../images/btn-goutte1.png);
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 176, ../scss/1_login.scss */
+.section-contact .contact-form .btn-primary:hover {
+  color: #39425b;
+}
+/* line 181, ../scss/1_login.scss */
+.section-contact .contact-form a.btn-primary:hover {
+  color: #39425b;
+}
+
+/******** FIN SECTION CONTACT PAGE CONTACT **********/

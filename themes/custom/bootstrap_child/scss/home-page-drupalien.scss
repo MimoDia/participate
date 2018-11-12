@@ -1,0 +1,42 @@
+ /*Default variables.*/
+@import "default-variables";
+
+ /*Base-theme overrides.*/
+@import 'overrides';
+
+//mixins
+@import 'mixins';
+
+//sprite
+@import 'icons';
+
+	
+.section-home {
+	padding: 0 20px;
+	h1.page-header {
+		display: none;
+	}
+	h2.block-title {
+		border-bottom: 1px solid rgba(57, 66, 91, 0.4);
+		padding-bottom: 5px;
+		color: $drupal-blue;
+		margin-top: 0;
+	}
+	.form-group {
+		margin: 0;
+	}
+	.views_slideshow_slide .views-row {
+		margin: 20px 90px;
+	}
+	.views-field {
+		float: left;
+		&.views-field-field-picture {
+			width: 35%;
+			margin-right: 30px;
+		}
+		&.views-field-title,
+		&.views-field-field-body {
+			width: 60%;
+		}
+	}
+}

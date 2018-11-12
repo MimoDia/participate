@@ -1,0 +1,12 @@
+uuid: 4adb062d-e959-4c1e-9a8d-ef5050c76ed5
+langcode: fr
+status: true
+dependencies: {  }
+id: manager
+label: manager
+weight: -8
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'change own username'
+  - 'mapermission access a la liste de tous les types de contenus evenement'

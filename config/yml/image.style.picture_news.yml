@@ -1,0 +1,14 @@
+uuid: 885bd7e1-fcd4-4da8-b1f7-a76463938b39
+langcode: fr
+status: true
+dependencies: {  }
+name: picture_news
+label: photo_actu
+effects:
+  8109ffb2-14a4-4d42-9f04-615a69aa31fe:
+    uuid: 8109ffb2-14a4-4d42-9f04-615a69aa31fe
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 150

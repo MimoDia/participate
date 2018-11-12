@@ -1,0 +1,100 @@
+/**
+ * Mixins.
+ *
+ * 
+ *
+ */
+@mixin font-white ($cgd8-font, $color-white) {//titillium_webregular white
+}
+@mixin title-XL {// style titre prehome
+	font-size: $big-title-XL;
+	font-family: $cgd8-font;
+	color: $color-white;
+}
+/*@mixin title-article {// style titre des articles
+	font-size: 1.750em;
+    text-transform: uppercase;
+    color: $cgd8-blue;
+    font-family: 'titillium_websemiBold', sans-serif;
+    text-decoration: none;
+}*/
+@mixin header-title {
+	@include font-white;
+	font-size: $title-header;
+}
+@mixin footer-title {
+	@include font-white;
+	font-size: $title-footer;
+}
+@mixin tab-nav {
+	@include font-white;
+	font-size: $font-size-nav-header;
+}
+
+@mixin bg-img-user-CGD8 {//bg goutte bleue pour les profils
+	background: url(../images/icons-se2d4a77255.png) no-repeat;
+    background-position: -120px -415px;
+    height: 85px;
+    width: 74px;
+}
+@mixin border-radius-50 {
+	border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@mixin border-radius-5 {
+	border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+@mixin border-radius-0 {
+	border-radius: 0;
+  	-moz-border-radius: 0; 
+  	-webkit-border-radius: 0;
+  	-ms-border-radius: 0;
+  	-o-border-radius: 0;
+}
+@mixin tab-nav {//onglets nav header
+	font-size: 1.750em;
+	color: $color-white;
+}
+@mixin tab-ss-nav {//onglets sous-menu nav header
+	color: $light-blue;
+    font-size: 1.675em;
+}
+@mixin circle-white {
+	border-radius: 6px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	-ms-border-radius: 6px;
+    -o-border-radius: 6px; 
+	padding: 0 4px;
+	background-color: white;
+	width: 4px;
+	height: 4px;
+}
+@mixin filtre-boxshadow {
+	box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -webkit-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -moz-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -ms-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -o-box-shadow: 5px 0 0 0 rgba(57, 66, 91, 0.3) inset;
+}
+@mixin filtre-boxshadow0 {
+	box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -webkit-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -moz-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -ms-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+    -o-box-shadow: 0 0 0 0 rgba(57, 66, 91, 0.3) inset;
+}
+@mixin nav-effettransition {
+	transition: all 0.3s ease-in-out 0s;
+  	-webkit-transition: all 0.3s ease-in-out 0s;
+  	-o-transition: -all 0.3s ease-in-out 0s;
+  	-moz-transition: all 0.3s ease-in-out 0s;
+  	-ms-transition: all 0.3s ease-in-out 0s;
+}

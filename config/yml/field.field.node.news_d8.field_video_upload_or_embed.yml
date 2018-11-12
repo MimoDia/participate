@@ -1,0 +1,23 @@
+uuid: 1cfcfb14-4e11-45a2-a740-e3e908663533
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_upload_or_embed
+    - node.type.news_d8
+  module:
+    - options
+_core:
+  default_config_hash: BAvzV8hPpk0eQKdlyt6_Jf_ftqW7YiaOD5nD0hXXDnY
+id: node.news_d8.field_video_upload_or_embed
+field_name: field_video_upload_or_embed
+entity_type: node
+bundle: news_d8
+label: 'Type de Vidéo'
+description: 'Précisez le type de vidéo que vous souhaitez partager'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

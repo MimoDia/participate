@@ -1,0 +1,34 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ */
+/* line 11, ../scss/2_certification_block.scss */
+/* line 12, ../scss/2_certification-image-size.scss */
+.field--name-user-picture .img-responsive {
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 20, ../scss/2_certification-image-size.scss */
+.views-field-user-picture .img-responsive {
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 29, ../scss/2_certification-image-size.scss */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
